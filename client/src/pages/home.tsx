@@ -35,7 +35,7 @@ export default function Home() {
               Enhancing Your Trucking Business with our <span className="text-primary">Trucking Services</span>
             </h1>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-              As one of the leading trucking companies, trucking42 provides premium trucking services to enhance your business.
+              As one of the leading trucking companies, SafeMile Compliance provides premium trucking services to enhance your business.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 h-12 text-lg">
@@ -111,7 +111,7 @@ export default function Home() {
             />
             
             <div className="col-span-1 md:col-span-2 relative group overflow-hidden rounded-xl h-64">
-              <img src={partnerImg} className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" />
+              <img src={partnerImg} alt="partnerimg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" />
               <div className="absolute inset-0 bg-slate-900/70 p-8 flex flex-col justify-end">
                 <h3 className="text-white text-2xl font-bold mb-2">Become our partner</h3>
                 <p className="text-slate-300 text-sm">Join our network and grow with us.</p>
@@ -129,7 +129,7 @@ export default function Home() {
         {/* Software Services */}
         <section id="software" className="py-20 bg-slate-50">
           <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-3xl font-bold mb-2">Trucking 42 Software Services</h2>
+            <h2 className="text-3xl font-bold mb-2">SafeMile Compliance Software Services</h2>
             <p className="text-muted-foreground mb-12">Streamline your operations with our proprietary software.</p>
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -162,7 +162,7 @@ export default function Home() {
                    <h3 className="font-bold text-lg mb-2">ELD</h3>
                    <p className="text-muted-foreground text-sm">Electronic Logging Device solutions compliant with FMCSA.</p>
                 </div>
-                 <img src={tmsImg} className="h-24 object-cover object-top opacity-50 rounded-md border" />
+                 <img src={tmsImg} alt="tmsimg" className="h-24 object-cover object-top opacity-50 rounded-md border" />
               </div>
                <div className="bg-slate-900 text-white p-8 rounded-xl flex flex-col justify-center relative overflow-hidden">
                  <div className="relative z-10">
@@ -171,7 +171,7 @@ export default function Home() {
                    <Button variant="secondary" size="sm" className="bg-white/10 text-white hover:bg-white/20 border-0">Learn More</Button>
                  </div>
                  <div className="absolute right-0 bottom-0 opacity-20">
-                    <img src={alexImg} className="h-48 object-cover mix-blend-luminosity" />
+                    <img src={alexImg} alt="aleximg" className="h-48 object-cover mix-blend-luminosity" />
                  </div>
               </div>
             </div>
@@ -221,7 +221,7 @@ export default function Home() {
         <section className="py-20 container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-               <h2 className="text-3xl font-bold mb-6">Trucking42: Where Reliability Meets Innovation</h2>
+               <h2 className="text-3xl font-bold mb-6">SafeMile Compliance: Where Reliability Meets Innovation</h2>
                <p className="text-muted-foreground mb-6">
                  Explore our comprehensive suite of logistics solutions designed to propel your business forward. We combine technology with expertise.
                </p>
@@ -245,7 +245,7 @@ export default function Home() {
         <section id="blog" className="py-20 bg-white">
           <div className="container mx-auto px-4 md:px-8">
             <div className="flex justify-between items-end mb-10">
-              <h2 className="text-3xl font-bold">Trucking 42 Blog</h2>
+              <h2 className="text-3xl font-bold">SafeMile Compliance Blog</h2>
               <Button variant="outline" className="text-primary border-primary hover:bg-primary/5">View All</Button>
             </div>
             
@@ -282,7 +282,7 @@ function ServiceCard({ title, description, price, image, dark }: { title: string
     `}>
       {image && (
         <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
-           <img src={image} className="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" />
+           <img src={image} alt="image" className="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" />
            <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
         </div>
       )}
@@ -323,7 +323,7 @@ function SoftwareCard({ title, description, image, badge }: { title: string, des
       </div>
       <div className="px-6 pb-6">
         <div className="bg-slate-50 rounded-lg border overflow-hidden h-32 relative">
-          <img src={image} className="w-full h-full object-cover object-top" />
+          <img src={image} alt="image" className="w-full h-full object-cover object-top" />
         </div>
       </div>
     </div>

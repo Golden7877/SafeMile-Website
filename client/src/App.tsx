@@ -41,7 +41,7 @@ function Router() {
         {() => <GenericPage title="MC Services" />}
       </Route>
       <Route path="/blog">
-        {() => <GenericPage title="Trucking 42 Blog" />}
+        {() => <GenericPage title="SafeMile Compliance Blog" />}
       </Route>
 
       {/* Main Nav Pages */}

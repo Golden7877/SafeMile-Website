@@ -15,7 +15,7 @@ export function Footer() {
           <div>
             <h2 className="text-3xl font-bold mb-8">Our contacts</h2>
             <p className="text-muted-foreground mb-8 max-w-md">
-              Visit one of our Trucking42 hubs or speak with our business. Contact us today!
+              Visit one of our SafeMile Compliance hubs or speak with our business. Contact us today!
             </p>
             
             <div className="space-y-4">
@@ -25,7 +25,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm text-muted-foreground">Email Us</span>
-                <span className="text-lg font-semibold">contact@trucking42.com</span>
+                <span className="text-lg font-semibold">contact@SafeMile Compliance.com</span>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ export function Footer() {
               <a href="#">Privacy Policy</a>
               <a href="#">Terms of Use</a>
             </div>
-            <p>© 2026 Trucking42. All rights reserved.</p>
+            <p>© 2026 SafeMile Compliance. All rights reserved.</p>
           </div>
         </div>
       </div>

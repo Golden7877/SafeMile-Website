@@ -97,7 +97,11 @@ export default function GenericPage({ title }: { title: string }) {
                  {/* Chart Placeholder */}
                  <div className="flex items-end gap-4 h-48">
                     {[40, 60, 45, 80, 55, 95].map((h, i) => (
-                      <div key={i} className="w-12 bg-primary/20 rounded-t-lg transition-all hover:bg-primary" style={{ height: `${h}%` }}></div>
+                      <div
+                        key={i}
+                        className="w-12 bg-primary/20 rounded-t-lg transition-all hover:bg-primary h-[var(--bar-height)]"
+                        data-height={h}
+                      ></div>
                     ))}
                  </div>
               </div>
@@ -145,7 +149,7 @@ export default function GenericPage({ title }: { title: string }) {
                   </div>
                   <div>
                     <p className="font-bold">Watch on YouTube</p>
-                    <p className="text-sm text-muted-foreground">Alex Taylor - CEO Trucking42</p>
+                    <p className="text-sm text-muted-foreground">Alex Taylor - CEO SafeMile Compliance</p>
                   </div>
                 </div>
               </div>
@@ -193,7 +197,7 @@ export default function GenericPage({ title }: { title: string }) {
           <div className="bg-slate-950 rounded-3xl p-12 text-white relative overflow-hidden">
             <div className="relative z-10 max-w-2xl">
               <h2 className="text-4xl font-black uppercase italic mb-6">Want to talk with us?</h2>
-              <p className="text-slate-400 mb-8 text-lg">Contact a business agent today to get your custom offer and start growing your business with Trucking42.</p>
+              <p className="text-slate-400 mb-8 text-lg">Contact a business agent today to get your custom offer and start growing your business with SafeMile Compliance.</p>
               <form className="flex gap-4 max-w-md">
                 <input className="flex-1 bg-slate-900 border border-slate-800 rounded-lg px-4 h-12 outline-none focus:border-primary" placeholder="Your email address" />
                 <Button className="bg-primary hover:bg-primary/90 px-8 h-12">Submit</Button>
