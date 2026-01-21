@@ -1,26 +1,29 @@
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu, Truck } from "lucide-react";
 
 export function Navbar() {
+  const [location] = useLocation();
+
   const topLinks = [
-    { name: "Dispatch", href: "#" },
-    { name: "Safety", href: "#" },
-    { name: "Logbook", href: "#" },
-    { name: "IFTA", href: "#" },
-    { name: "Accounting", href: "#" },
-    { name: "Administration", href: "#" },
-    { name: "Hiring drivers", href: "#" },
-    { name: "TMS", href: "#" },
-    { name: "MC Services", href: "#" },
-    { name: "Blog", href: "#" },
+    { name: "Dispatch", href: "/dispatch" },
+    { name: "Safety", href: "/safety" },
+    { name: "Logbook", href: "/logbook" },
+    { name: "IFTA", href: "/ifta" },
+    { name: "Accounting", href: "/accounting" },
+    { name: "Administration", href: "/administration" },
+    { name: "Hiring drivers", href: "/hiring-drivers" },
+    { name: "TMS", href: "/tms" },
+    { name: "MC Services", href: "/mc-services" },
+    { name: "Blog", href: "/blog" },
   ];
 
   const mainLinks = [
-    { name: "Services", href: "#services" },
-    { name: "Softwares", href: "#software" },
-    { name: "Trainings", href: "#trainings" },
-    { name: "Programs", href: "#programs" },
+    { name: "Services", href: "/services" },
+    { name: "Softwares", href: "/softwares" },
+    { name: "Trainings", href: "/trainings" },
+    { name: "Programs", href: "/programs" },
   ];
 
   return (
@@ -29,15 +32,18 @@ export function Navbar() {
       <div className="border-b hidden md:block">
         <div className="container mx-auto px-4 md:px-8 flex items-center justify-between">
           <div className="flex">
-            {topLinks.map((link, i) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className={`text-[11px] font-medium px-4 py-2 border-r last:border-r-0 hover:text-primary transition-colors ${i === 0 ? 'text-primary border-b-2 border-b-primary' : 'text-slate-600'}`}
-              >
-                {link.name}
-              </a>
-            ))}
+            {topLinks.map((link) => {
+              const isActive = location === link.href;
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`text-[11px] font-medium px-4 py-2 border-r last:border-r-0 hover:text-primary transition-colors ${isActive ? 'text-primary border-b-2 border-b-primary bg-slate-50' : 'text-slate-600'}`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
           <div className="text-right py-1">
             <div className="text-sm font-bold text-slate-900">+1 (321) 888-3347</div>
@@ -50,29 +56,30 @@ export function Navbar() {
       <div className="border-b">
         <div className="container flex h-20 items-center justify-between mx-auto px-4 md:px-8">
           <div className="flex items-center gap-2">
-            <div className="flex flex-col items-center">
-              <div className="flex items-center gap-1">
-                 <div className="bg-primary p-1 rounded">
-                   <Truck className="h-4 w-4 text-white" />
-                 </div>
-                 <div className="text-xl font-black tracking-tighter uppercase italic">
-                   Trucking<span className="text-primary">42</span>
-                 </div>
-              </div>
-            </div>
+            <Link href="/" className="flex items-center gap-1">
+               <div className="bg-primary p-1 rounded">
+                 <Truck className="h-4 w-4 text-white" />
+               </div>
+               <div className="text-xl font-black tracking-tighter uppercase italic">
+                 Trucking<span className="text-primary">42</span>
+               </div>
+            </Link>
           </div>
 
           {/* Desktop Main Links */}
           <div className="hidden md:flex items-center gap-12">
-            {mainLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="text-lg font-bold text-slate-900 hover:text-primary transition-colors"
-              >
-                {link.name}
-              </a>
-            ))}
+            {mainLinks.map((link) => {
+              const isActive = location === link.href;
+              return (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={`text-lg font-bold transition-colors ${isActive ? 'text-primary' : 'text-slate-900 hover:text-primary'}`}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
 
           <div className="flex items-center gap-4">
@@ -89,18 +96,27 @@ export function Navbar() {
               </SheetTrigger>
               <SheetContent side="right">
                 <div className="flex flex-col gap-4 mt-8">
+                  <Link href="/" className="text-lg font-bold">Home</Link>
                   {mainLinks.map((link) => (
-                    <a
+                    <Link
                       key={link.name}
                       href={link.href}
                       className="text-lg font-bold"
                     >
                       {link.name}
-                    </a>
+                    </Link>
                   ))}
-                  <div className="pt-4 border-t">
-                    <p className="text-sm font-bold mb-2">+1 (321) 888-3347</p>
-                    <Button className="w-full bg-primary text-white font-bold">Contact Us</Button>
+                  <div className="pt-4 border-t space-y-4">
+                    <p className="font-bold text-sm uppercase text-slate-400">Services</p>
+                    {topLinks.map((link) => (
+                      <Link key={link.name} href={link.href} className="block text-sm font-medium">
+                        {link.name}
+                      </Link>
+                    ))}
+                    <div className="pt-4">
+                      <p className="text-sm font-bold mb-2">+1 (321) 888-3347</p>
+                      <Button className="w-full bg-primary text-white font-bold">Contact Us</Button>
+                    </div>
                   </div>
                 </div>
               </SheetContent>
