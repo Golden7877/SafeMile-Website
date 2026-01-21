@@ -200,7 +200,7 @@ export default function GenericPage({ title }: { title: string }) {
               </form>
             </div>
             <div className="absolute right-0 bottom-0 opacity-10">
-               <Truck className="h-96 w-96 text-white" />
+               <TruckIcon className="h-96 w-96 text-white" />
             </div>
           </div>
         </section>
@@ -212,7 +212,7 @@ export default function GenericPage({ title }: { title: string }) {
   );
 }
 
-function Truck(props: any) {
+function TruckIcon(props: any) {
   return (
     <svg
       {...props}
