@@ -49,16 +49,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Logo Strip */}
-      <div className="border-b py-8 bg-slate-50">
-        <div className="container mx-auto px-4 md:px-8 flex justify-between items-center opacity-40 grayscale gap-8 overflow-x-auto no-scrollbar">
-           {/* Placeholder Logos */}
-           {["RTS", "CH Robinson", "Uber Freight", "TQL", "Coyote", "XPO"].map((logo) => (
-             <span key={logo} className="text-xl font-bold whitespace-nowrap">{logo}</span>
-           ))}
-        </div>
-      </div>
-
       <main className="flex-1">
         
         {/* Services Section */}
