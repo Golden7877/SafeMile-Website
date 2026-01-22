@@ -330,6 +330,7 @@ function SoftwareCard({ title, description, image, badge }: { title: string, des
   )
 }
 
+
 function PricingCard({ title, price, features }: { title: string, price: string, features?: string[] }) {
   return (
     <div className="border rounded-xl p-6 bg-white hover:border-primary/50 transition-colors cursor-pointer group">
