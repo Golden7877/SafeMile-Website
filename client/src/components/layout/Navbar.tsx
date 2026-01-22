@@ -57,12 +57,15 @@ export function Navbar() {
         <div className="container flex h-20 items-center justify-between mx-auto px-4 md:px-8">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-1">
-               <div className="bg-primary p-1 rounded">
+               {/* <div className="bg-primary p-1 rounded">
                  <Truck className="h-4 w-4 text-white" />
+               </div> */}
+               <div className="h-13 w-40">
+                <img src="Logo.png" alt="logo"></img>
                </div>
-               <div className="text-xl font-black tracking-tighter uppercase italic">
+               {/* <div className="text-xl font-black tracking-tighter uppercase italic">
                  Trucking<span className="text-primary">42</span>
-               </div>
+               </div> */}
             </Link>
           </div>
 
