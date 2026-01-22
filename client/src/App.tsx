@@ -6,6 +6,16 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import GenericPage from "@/pages/generic-page";
+import DispatchPage from "@/pages/dispatch";
+import SafetyPage from "@/pages/safety";
+import LogbookPage from "@/pages/logbook";
+import IFTAPage from "@/pages/ifta";
+import AccountingPage from "@/pages/accounting";
+import AdministrationPage from "@/pages/administration";
+import HiringDriversPage from "@/pages/hiring-drivers";
+import TMSPage from "@/pages/tms";
+import MCServicesPage from "@/pages/mc-services";
+import BlogPage from "@/pages/blog";
 
 function Router() {
   return (
@@ -13,36 +23,16 @@ function Router() {
       <Route path="/" component={Home} />
       
       {/* Top Banner Pages */}
-      <Route path="/dispatch">
-        {() => <GenericPage title="Dispatch" />}
-      </Route>
-      <Route path="/safety">
-        {() => <GenericPage title="Safety" />}
-      </Route>
-      <Route path="/logbook">
-        {() => <GenericPage title="Logbook" />}
-      </Route>
-      <Route path="/ifta">
-        {() => <GenericPage title="IFTA" />}
-      </Route>
-      <Route path="/accounting">
-        {() => <GenericPage title="Accounting" />}
-      </Route>
-      <Route path="/administration">
-        {() => <GenericPage title="Administration" />}
-      </Route>
-      <Route path="/hiring-drivers">
-        {() => <GenericPage title="Hiring Drivers" />}
-      </Route>
-      <Route path="/tms">
-        {() => <GenericPage title="TMS" />}
-      </Route>
-      <Route path="/mc-services">
-        {() => <GenericPage title="MC Services" />}
-      </Route>
-      <Route path="/blog">
-        {() => <GenericPage title="SafeMile Compliance Blog" />}
-      </Route>
+      <Route path="/dispatch" component={DispatchPage} />
+      <Route path="/safety" component={SafetyPage} />
+      <Route path="/logbook" component={LogbookPage} />
+      <Route path="/ifta" component={IFTAPage} />
+      <Route path="/accounting" component={AccountingPage} />
+      <Route path="/administration" component={AdministrationPage} />
+      <Route path="/hiring-drivers" component={HiringDriversPage} />
+      <Route path="/tms" component={TMSPage} />
+      <Route path="/mc-services" component={MCServicesPage} />
+      <Route path="/blog" component={BlogPage} />
 
       {/* Main Nav Pages */}
       <Route path="/services">
