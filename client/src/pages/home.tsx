@@ -32,7 +32,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-2xl animate-in slide-in-from-left duration-700">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Enhancing Your Trucking Business with our <span className="text-primary">Trucking Services</span>
+              Enhance Your Trucking Business with Our <span className="text-primary">Expert Services</span>
             </h1>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed">
               As one of the leading trucking companies, SafeMile Compliance provides premium trucking services to enhance your business.
