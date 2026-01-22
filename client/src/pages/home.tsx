@@ -7,11 +7,11 @@ import { Separator } from "@/components/ui/separator";
 import { ArrowRight, CheckCircle2, Truck, Shield, FileText, Settings, Users, Briefcase, ChevronRight, Play } from "lucide-react";
 
 // Assets
-import officeHero from '@assets/generated_images/trucking_dispatch_office_hero.png';
-import dispatcherImg from '@assets/generated_images/truck_dispatcher_working.png';
-import partnerImg from '@assets/generated_images/business_handshake_silhouette.png';
-import alexImg from '@assets/generated_images/alex_taylor_video_thumbnail.png';
-import tmsImg from '@assets/generated_images/tms_software_dashboard.png';
+const officeHero = '/attached_assets/generated_images/trucking_dispatch_office_hero.png';
+const dispatcherImg = '/attached_assets/generated_images/truck_dispatcher_working.png';
+const partnerImg = '/attached_assets/generated_images/business_handshake_silhouette.png';
+const alexImg = '/attached_assets/generated_images/alex_taylor_video_thumbnail.png';
+const tmsImg = '/attached_assets/generated_images/tms_software_dashboard.png';
 
 export default function Home() {
   return (

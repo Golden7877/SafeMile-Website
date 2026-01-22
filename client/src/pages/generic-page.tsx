@@ -7,8 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { BarChart3, ArrowRight, Play, CheckCircle2 } from "lucide-react";
 
 // Assets
-import alexImg from '@assets/generated_images/alex_taylor_video_thumbnail.png';
-import teamImg from '@assets/generated_images/team_of_dispatchers_working.png';
+const alexImg = '/attached_assets/generated_images/alex_taylor_video_thumbnail.png';
+const teamImg = '/attached_assets/generated_images/team_of_dispatchers_working.png';
 
 export default function GenericPage({ title }: { title: string }) {
   return (
