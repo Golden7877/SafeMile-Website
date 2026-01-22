@@ -75,7 +75,7 @@ export default function GenericPage({ title }: { title: string }) {
                   <div className="flex justify-between items-center mb-8">
                     <div>
                       <p className="text-slate-400 text-xs uppercase mb-1">Average Gross per Truck</p>
-                      <p className="text-4xl font-bold">$36,475</p>
+                      {/* <p className="text-4xl font-bold">$36,475</p> */}
                     </div>
                     <BarChart3 className="h-10 w-10 text-primary" />
                   </div>
@@ -83,11 +83,11 @@ export default function GenericPage({ title }: { title: string }) {
                   <div className="grid grid-cols-2 gap-8 border-t border-slate-800 pt-8">
                     <div>
                       <p className="text-slate-400 text-xs mb-1">Average CPM</p>
-                      <p className="text-2xl font-bold text-primary">$2.04</p>
+                      {/* <p className="text-2xl font-bold text-primary">$2.04</p> */}
                     </div>
                     <div>
                       <p className="text-slate-400 text-xs mb-1">Top Result</p>
-                      <p className="text-2xl font-bold text-green-400">$2.68</p>
+                      {/* <p className="text-2xl font-bold text-green-400">$2.68</p> */}
                     </div>
                   </div>
                 </div>

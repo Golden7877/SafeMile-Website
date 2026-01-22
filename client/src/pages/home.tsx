@@ -77,37 +77,37 @@ export default function Home() {
             <ServiceCard 
               title="Safety" 
               description="Safety first. We help you maintain safety compliance."
-              price="$79"
+              // price="$79"
             />
             <ServiceCard 
               title="Logbook" 
               description="Monitor logbooks accurately and easily."
-              price="$10"
+              // price="$10"
             />
             <ServiceCard 
               title="IFTA" 
               description="Quarterly IFTA calculations & reports."
-              price="$30"
+              // price="$30"
             />
             <ServiceCard 
               title="Accounting" 
               description="Complete transportation accounting solutions."
-              price="$35"
+              // price="$35"
             />
             <ServiceCard 
               title="Administration" 
               description="Streamlined admin support for your fleet."
-              price="$25"
+              // price="$25"
             />
             <ServiceCard 
               title="Hiring Drivers" 
               description="Recruiting services to find qualified drivers."
-              price="$500"
+              // price="$500"
             />
              <ServiceCard 
               title="MC Setup" 
               description="We help you get your MC authority active."
-              price="$700"
+              // price="$700"
             />
             
             <div className="col-span-1 md:col-span-2 relative group overflow-hidden rounded-xl h-64">

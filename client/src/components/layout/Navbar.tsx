@@ -46,7 +46,7 @@ export function Navbar() {
             })}
           </div>
           <div className="text-right py-1">
-            <div className="text-sm font-bold text-slate-900">+1 (321) 888-3347</div>
+            <div className="text-sm font-bold text-slate-900">Number</div>
             <div className="text-[10px] text-slate-400 -mt-1">Feel free to call us anytime</div>
           </div>
         </div>
@@ -117,7 +117,7 @@ export function Navbar() {
                       </Link>
                     ))}
                     <div className="pt-4">
-                      <p className="text-sm font-bold mb-2">+1 (321) 888-3347</p>
+                      <p className="text-sm font-bold mb-2">Number</p>
                       <Button className="w-full bg-primary text-white font-bold">Contact Us</Button>
                     </div>
                   </div>
