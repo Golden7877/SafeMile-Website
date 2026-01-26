@@ -60,44 +60,52 @@ export default function Home() {
             <ServiceCard 
               title="Dispatch" 
               description="Efficient dispatch services to keep your trucks moving."
-              price="3-7%"
-              image={dispatcherImg}
-              dark
+              price="Custom Pricing"
+              // image={dispatcherImg}
+              
+              href="/dispatch"
             />
             <ServiceCard 
               title="Safety" 
               description="Safety first. We help you maintain safety compliance."
-              // price="$79"
+              price="Custom Pricing"
+              href="/safety"
             />
             <ServiceCard 
               title="Logbook" 
               description="Monitor logbooks accurately and easily."
-              // price="$10"
+              price="Custom Pricing"
+              href="/logbook"
             />
             <ServiceCard 
               title="IFTA" 
               description="Quarterly IFTA calculations & reports."
-              // price="$30"
+              price="Custom Pricing"
+              href="/ifta"
             />
             <ServiceCard 
               title="Accounting" 
               description="Complete transportation accounting solutions."
-              // price="$35"
+              price="Custom Pricing"
+              href="/accounting"
             />
             <ServiceCard 
               title="Administration" 
               description="Streamlined admin support for your fleet."
-              // price="$25"
+              price="Custom Pricing"
+              href="/administration"
             />
             <ServiceCard 
               title="Hiring Drivers" 
               description="Recruiting services to find qualified drivers."
-              // price="$500"
+              price="Custom Pricing"
+              href="/hiring-drivers"
             />
              <ServiceCard 
               title="MC Setup" 
               description="We help you get your MC authority active."
-              // price="$700"
+              price="Custom Pricing"
+              href="/mc-services"
             />
             
             <div className="col-span-1 md:col-span-2 relative group overflow-hidden rounded-xl h-64">
@@ -264,36 +272,83 @@ export default function Home() {
 }
 
 // Components
-function ServiceCard({ title, description, price, image, dark }: { title: string, description: string, price: string, image?: string, dark?: boolean }) {
+function ServiceCard({
+  title,
+  description,
+  price,
+  image,
+  dark,
+  href,
+}: {
+  title: string
+  description: string
+  price: string
+  image?: string
+  dark?: boolean
+  href?: string
+}) {
   return (
-    <div className={`
-      relative p-6 rounded-xl border flex flex-col justify-between h-64 transition-all duration-300 hover:shadow-lg group
-      ${dark ? 'bg-slate-900 text-white border-slate-800' : 'bg-white hover:border-slate-300'}
-    `}>
+    <div
+      className={`
+        relative p-6 rounded-xl border h-64
+        flex flex-col justify-between overflow-hidden
+        transition-all duration-300 group cursor-pointer
+        hover:-translate-y-1 hover:shadow-xl
+        ${dark ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200'}
+      `}
+    >
+      {/* IMAGE BACKGROUND */}
       {image && (
-        <div className="absolute inset-0 z-0 overflow-hidden rounded-xl">
-           <img src={image} alt="image" className="w-full h-full object-cover opacity-20 group-hover:scale-105 transition-transform duration-700" />
-           <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
-        </div>
+        <img
+          src={image}
+          alt={title}
+          className="absolute inset-0 w-full h-full object-cover opacity-20
+                     transition-transform duration-700 group-hover:scale-105"
+        />
       )}
-      
+
+      {/* HOVER COLOR OVERLAY */}
+      <div
+        className={`
+          absolute inset-0 z-0 transition-colors duration-300
+          ${dark
+            ? 'bg-slate-900/0 group-hover:bg-slate-800/90'
+            : 'bg-white/0 group-hover:bg-primary/90'}
+        `}
+      />
+
+      {/* CONTENT */}
       <div className="relative z-10">
-        <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className={`text-sm ${dark ? 'text-slate-400' : 'text-muted-foreground'}`}>{description}</p>
+        <h3 className="text-xl font-bold mb-2 group-hover:text-white">
+          {title}
+        </h3>
+        <p className="text-sm opacity-80 group-hover:text-white/90">
+          {description}
+        </p>
       </div>
-      
+
       <div className="relative z-10 flex justify-between items-end">
         <div>
-           <span className="text-xs uppercase opacity-70 block mb-1">Starting at</span>
-           <span className="text-2xl font-bold">{price}</span>
+          <span className="text-xs uppercase opacity-70 block mb-1">
+            Starting at
+          </span>
+          <span className="text-2xl font-bold group-hover:text-white">
+            {price}
+          </span>
         </div>
-        <div className={`p-2 rounded-full ${dark ? 'bg-white/10' : 'bg-slate-100'}`}>
-          <ArrowRight className="h-4 w-4" />
-        </div>
+
+        <a
+          href={href || '#'}
+          aria-label={`View details for ${title}`}
+          className="p-2 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors"
+        >
+          <ArrowRight className="h-4 w-4 text-white" />
+        </a>
       </div>
     </div>
   )
 }
+
 
 function SoftwareCard({ title, description, image, badge }: { title: string, description: string, image: string, badge?: string }) {
   return (
