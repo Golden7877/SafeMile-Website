@@ -16,7 +16,7 @@ import HiringDriversPage from "@/pages/hiring-drivers";
 import TMSPage from "@/pages/tms";
 import MCServicesPage from "@/pages/mc-services";
 import BlogPage from "@/pages/blog";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function Router() {
   return (
