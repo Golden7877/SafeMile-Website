@@ -19,7 +19,7 @@ export default function MCServicesPage() {
             </h1>
             <p className="text-lg text-slate-300 mb-8">We handle everything needed to get your MC authority approved and active.</p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
-              MC Setup - $700
+              MC Setup
             </Button>
           </div>
         </div>
