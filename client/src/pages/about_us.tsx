@@ -77,9 +77,9 @@ export default function BlogPage() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
-              SafeMile Compliance <span className="text-primary">Blog</span>
+              SafeMile Compliance <span className="text-primary">about us</span>
             </h1>
-            <p className="text-lg text-slate-300 mb-8">Expert insights and guidance for trucking companies and owner-operators.</p>
+            <p className="text-lg text-slate-300 mb-8">Our vision is to become a trusted industry leader by keeping fleets compliant, profitable, and confidently moving forward through reliable and high-quality services.</p>
           </div>
         </div>
       </section>

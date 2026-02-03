@@ -16,7 +16,7 @@ export function Navbar() {
     { name: "Hiring drivers", href: "/hiring-drivers" },
     { name: "TMS", href: "/tms" },
     { name: "MC Services", href: "/mc-services" },
-    { name: "Blog", href: "/blog" },
+    { name: "About Us", href: "/about_us" },
   ];
 
   const mainLinks = [

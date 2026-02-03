@@ -239,11 +239,11 @@ export default function Home() {
           </div>
         </section>
         
-        {/* Blog Section */}
-        <section id="blog" className="py-20 bg-white">
+        {/* About Us Section */}
+        <section id="about us" className="py-20 bg-white">
           <div className="container mx-auto px-4 md:px-8">
             <div className="flex justify-between items-end mb-10">
-              <h2 className="text-3xl font-bold">SafeMile Compliance Blog</h2>
+              <h2 className="text-3xl font-bold">SafeMile Compliance about us</h2>
               <Button variant="outline" className="text-primary border-primary hover:bg-primary/5">View All</Button>
             </div>
             

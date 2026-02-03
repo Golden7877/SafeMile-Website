@@ -29,10 +29,10 @@ export default function GenericPage({ title }: { title: string }) {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl animate-in slide-in-from-left duration-700">
             <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
-              Truck {title} <span className="text-primary">Service</span>
+              Truck {title} <span className="text-primary"></span>
             </h1>
             <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-2xl">
-              A trusted trucking company committed to providing exceptional truck {title.toLowerCase()} services for owner-operators and trucking businesses. Our experienced team and dedicated support work tirelessly to maximize your fleet's productivity and revenue.
+              A trusted trucking company committed to providing exceptional truck  services for owner-operators and trucking businesses. Our experienced team and dedicated support work tirelessly to maximize your fleet's productivity and revenue.
             </p>
           </div>
         </div>
