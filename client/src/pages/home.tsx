@@ -84,10 +84,10 @@ export default function Home() {
               href="/ifta"
             />
             <ServiceCard 
-              title="Accounting" 
-              description="Complete transportation accounting solutions."
+              title="Reporting & Management" 
+              description="Actionable reporting and fleet management solutions."
               price="Custom Pricing"
-              href="/accounting"
+              href="/reporting-management"
             />
             <ServiceCard 
               title="Administration" 
@@ -148,8 +148,8 @@ export default function Home() {
                 image={tmsImg}
               />
               <SoftwareCard 
-                title="Accounting" 
-                description="Financial tracking made easy"
+                title="Reporting & Management" 
+                description="Reporting and management tools"
                 image={tmsImg}
               />
             </div>

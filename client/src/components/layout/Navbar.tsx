@@ -11,7 +11,7 @@ export function Navbar() {
     // { name: "Safety", href: "/safety" },
     // { name: "Logbook", href: "/logbook" },
     // { name: "IFTA", href: "/ifta" },
-    { name: "Reporting & Management", href: "/accounting" },
+    { name: "Reporting & Management", href: "/reporting-management" },
     { name: "Administration", href: "/administration" },
     { name: "Hiring drivers", href: "/hiring-drivers" },
     // { name: "TMS", href: "/tms" },

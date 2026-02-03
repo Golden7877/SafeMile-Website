@@ -66,8 +66,8 @@ export default function SoftwarePage() {
               />
               <SoftwareProductCard 
                 icon={<Clock className="h-8 w-8 text-primary" />}
-                title="Accounting" 
-                description="Financial tracking made easy"
+                title="Reporting & Management" 
+                description="Reporting and management tools"
                 features={["Invoice management", "Expense tracking", "Reports"]}
               />
             </div>

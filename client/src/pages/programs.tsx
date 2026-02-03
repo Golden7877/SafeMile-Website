@@ -92,7 +92,7 @@ export default function ProgramsPage() {
                     "Insurance and carrier registration assistance",
                     "Fleet management best practices",
                     "Dispatch systems setup and training",
-                    "Accounting and bookkeeping guidance",
+                    "Reporting and bookkeeping guidance",
                     "Safety compliance framework",
                     "Driver recruitment strategies",
                     "Contract negotiation support",

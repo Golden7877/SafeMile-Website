@@ -10,7 +10,7 @@ import DispatchPage from "@/pages/dispatch";
 import SafetyPage from "@/pages/safety";
 import LogbookPage from "@/pages/logbook";
 import IFTAPage from "@/pages/ifta";
-import AccountingPage from "@/pages/accounting";
+import ReportingManagementPage from "@/pages/reporting-management";
 import AdministrationPage from "@/pages/administration";
 import HiringDriversPage from "@/pages/hiring-drivers";
 import TMSPage from "@/pages/tms";
@@ -28,7 +28,7 @@ function Router() {
       {/* <Route path="/safety" component={SafetyPage} /> */}
       {/* <Route path="/logbook" component={LogbookPage} /> */}
       {/* <Route path="/ifta" component={IFTAPage} /> */}
-      <Route path="/accounting" component={AccountingPage} />
+      <Route path="/reporting-management" component={ReportingManagementPage} />
       <Route path="/administration" component={AdministrationPage} />
       <Route path="/hiring-drivers" component={HiringDriversPage} />
       <Route path="/tms" component={TMSPage} />
