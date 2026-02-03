@@ -14,15 +14,35 @@ export default function HiringDriversPage() {
         
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
-              Professional Driver <span className="text-primary">Recruitment Services</span>
+             <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
+             Professional Driver{" "}
+              <span className="text-primary">Recruitment Services</span>
             </h1>
-            <p className="text-lg text-slate-300 mb-8">Find and recruit quality drivers for your fleet with our recruitment experts.</p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
-              Hiring Service - $500 per hire
+
+            <p className="text-lg text-slate-300 mb-4">
+             The success of any fleet starts with its drivers. The right drivers keep
+             your trucks running safely, on time, and profitably—while protecting your
+             compliance, reputation, and bottom line. We help fleets find, screen, and
+             hire qualified drivers who are reliable, compliant, and ready to perform.
+             With professional drivers on your team, you reduce accidents, lower
+             turnover, improve customer satisfaction, and grow your business with
+             confidence.
+             </p>
+
+          
+            <h3 className="text-white text-lg font-semibold mb-4">
+              Let us handle driver hiring—so you can focus on moving your business forward.
+            </h3>
+
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-white font-semibold mt-2"
+            >
+              Hiring Service
             </Button>
           </div>
         </div>
+
       </section>
 
       <main className="flex-1">

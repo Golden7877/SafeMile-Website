@@ -2,170 +2,188 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, ShieldCheck, Truck, FileCheck } from "lucide-react";
 
-const alexImg = '/attached_assets/generated_images/alex_taylor_video_thumbnail.png';
+const alexImg = "/attached_assets/generated_images/alex_taylor_video_thumbnail.png";
 
-export default function BlogPage() {
-  const posts = [
-    {
-      id: 1,
-      title: "What Does it Take to Be a Successful Owner-Operator?",
-      category: "Guide",
-      date: "September 27, 2025",
-      author: "Alex Taylor",
-      readTime: "5 min read",
-      image: alexImg,
-      excerpt: "Learn the essential steps and strategies to succeed as an owner-operator in the trucking industry.",
-      featured: true
-    },
-    {
-      id: 2,
-      title: "How to Start a Trucking Business",
-      category: "Business",
-      date: "September 20, 2025",
-      author: "Sarah Johnson",
-      readTime: "8 min read",
-      excerpt: "A comprehensive guide to starting your own trucking company from scratch."
-    },
-    {
-      id: 3,
-      title: "Top 10 Trucks for 2026",
-      category: "Reviews",
-      date: "September 15, 2025",
-      author: "Mike Davis",
-      readTime: "6 min read",
-      excerpt: "See our recommendations for the best commercial trucks available in 2026."
-    },
-    {
-      id: 4,
-      title: "Understanding FMCSA Regulations",
-      category: "Compliance",
-      date: "September 10, 2025",
-      author: "Alex Taylor",
-      readTime: "7 min read",
-      excerpt: "A detailed breakdown of FMCSA safety regulations every trucker should know."
-    },
-    {
-      id: 5,
-      title: "Fuel Efficiency Tips for Truckers",
-      category: "Efficiency",
-      date: "September 5, 2025",
-      author: "John Miller",
-      readTime: "5 min read",
-      excerpt: "Practical tips to reduce fuel consumption and increase profitability."
-    },
-    {
-      id: 6,
-      title: "The Future of Autonomous Trucking",
-      category: "Technology",
-      date: "August 30, 2025",
-      author: "Emma Wilson",
-      readTime: "9 min read",
-      excerpt: "Exploring how autonomous vehicles are changing the trucking industry."
-    }
-  ];
-
+export default function AboutPage() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative bg-slate-950 text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent"></div>
-        
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent" />
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl">
+            <Badge className="mb-4 bg-primary">About Us</Badge>
             <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
-              SafeMile Compliance <span className="text-primary">about us</span>
+              SafeMile <span className="text-primary">Compliance</span>
             </h1>
-            <p className="text-lg text-slate-300 mb-8">Our vision is to become a trusted industry leader by keeping fleets compliant, profitable, and confidently moving forward through reliable and high-quality services.</p>
+            <p className="text-lg text-slate-300">
+              Helping trucking companies stay compliant, profitable, and on the
+              road with confidence.
+            </p>
           </div>
         </div>
       </section>
 
       <main className="flex-1 py-20">
-        <div className="container mx-auto px-4 md:px-8">
-          {/* Featured Post */}
-          <div className="mb-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-              <div className="lg:order-2">
-                <Badge className="bg-primary hover:bg-primary mb-4">Featured</Badge>
-                <h2 className="text-4xl font-bold mb-4">What Does it Take to Be a Successful Owner-Operator?</h2>
-                <p className="text-muted-foreground mb-6">Learn the essential steps and strategies to succeed as an owner-operator in the trucking industry. Discover what separates successful operators from the rest.</p>
-                <div className="flex items-center gap-4 mb-6 text-sm text-muted-foreground">
-                  <span>September 27, 2025</span>
-                  <span>•</span>
-                  <span>Alex Taylor</span>
-                  <span>•</span>
-                  <span>5 min read</span>
+        <div className="container mx-auto px-4 md:px-8 space-y-24">
+
+          {/* Who We Are */}
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl font-bold mb-6">Build a Profitable Owner-Operator Business - Without the Operational Stress</h2>
+              <p className="text-muted-foreground mb-4">
+                Running a successful owner-operator business takes more than time on the road. It requires smart freight selection, disciplined cost management, reliable cash flow, and constant attention to safety and regulatory compliance. Managing all of this alone can be overwhelming—and costly.
+              </p>
+              <p className="text-muted-foreground mb-4">
+                That's Where<b> we come in.</b>
+              </p>
+              <p className="text-muted-foreground mb-4">
+                As your trusted third-party dispatch and compliance partner, we take care of the day-by-day operational responsibilities so you can focus on driving and growing your business. from <b>Load booking and dispatch</b> to <b>billing, collections, safety compliance, ELD managementm, audit, and IFTA reporting,</b> we handle the details that protect your authority and improve your profitabilty.
+              </p>
+
+              <p className="text-muted-foreground">
+                Our Experienced team ensures your operations remain <b>compliant, efficent, and inspection ready,</b> while reducing administractive burden and elimination costly mistakes. With structured systems, proactive administractive support, we help owner-operators operate with confidence and consistency.
+              </p>
+            </div>
+            <div className="rounded-xl overflow-hidden h-96">
+              <img
+                src="/attached_assets/generated_images/cascadia.jpg"
+                alt="cascadia"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </section>
+
+          {/* Servies we offer */}
+          <section>
+            <h2 className="text-3xl font-bold mb-10 text-center">
+              Servies we offer
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="border rounded-xl p-8 text-center">
+                <ShieldCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
+                <h3 className="font-bold mb-3">Load Booking & Dispatch</h3>
+                <p className="text-sm text-muted-foreground">
+                  Simplify load booking and dispatch with faster assignments, better visibility, and reliable delivery execution.
+                </p>
+              </div>
+
+              <div className="border rounded-xl p-8 text-center">
+                <Truck className="mx-auto mb-4 h-10 w-10 text-primary" />
+                <h3 className="font-bold mb-3">Customer Invoicing & Collections</h3>
+                <p className="text-sm text-muted-foreground">
+                  Accurate invoicing and efficient collections to keep payments on time and operations running smoothly.
+                </p>
+              </div>
+
+              <div className="border rounded-xl p-8 text-center">
+                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
+                <h3 className="font-bold mb-3">Safety & Compliance Managemenet</h3>
+                <p className="text-sm text-muted-foreground">
+                  Safety plans built to protect your drivers, ensure compliance, and strengthen your authority.
+                </p>
+              </div>
+
+              <div className="border rounded-xl p-8 text-center">
+                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
+                <h3 className="font-bold mb-3">IFTA Filing & Reporting</h3>
+                <p className="text-sm text-muted-foreground">
+                  Hassle-free IFTA filing with precise fuel tax reporting and on-time submissions for multi-state operations.
+                </p>
+              </div>
+              <div className="border rounded-xl p-8 text-center">
+                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
+                <h3 className="font-bold mb-3">ELD & Hours of Service Management</h3>
+                <p className="text-sm text-muted-foreground">
+                  Efficient ELD and Hours of Service management to maintain compliance, improve driver productivity, and avoid penalties.
+                </p>
+              </div>
+              <div className="border rounded-xl p-8 text-center">
+                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
+                <h3 className="font-bold mb-3">Audit Handling & Regulatory Support</h3>
+                <p className="text-sm text-muted-foreground">
+                  Expert support for audits and regulatory requirements to ensure compliance, minimize risk, and protect your operating authority.
+                </p>
+              </div>
+              <div className="border rounded-xl p-8 text-center">
+                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
+                <h3 className="font-bold mb-3">Driver Hiring & Onboard Assistance</h3>
+                <p className="text-sm text-muted-foreground">
+                  Efficient driver hiring and onboarding assistance to ensure qualified drivers, proper documentation, and regulatory compliance.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Stats */}
+          <section className="bg-slate-50 rounded-2xl py-16">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+              <div>
+                <div className="text-3xl font-bold text-primary">10+</div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  Years Experience
                 </div>
-                <Button className="bg-primary hover:bg-primary/90">
-                  Read Article <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
               </div>
-              <div className="lg:order-1 rounded-xl overflow-hidden h-96">
-                <img src={alexImg} alt="Featured" className="w-full h-full object-cover" />
+              <div>
+                <div className="text-3xl font-bold text-primary">1,000+</div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  Fleets Supported
+                </div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary">98%</div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  Compliance Success
+                </div>
+              </div>
+              <div>
+                <div className="text-3xl font-bold text-primary">24/7</div>
+                <div className="text-sm text-muted-foreground mt-1">
+                  Ongoing Support
+                </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          {/* Blog Grid */}
-          <div className="mb-12">
-            <h2 className="text-3xl font-bold mb-8">Latest Articles</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.slice(1).map((post) => (
-                <article key={post.id} className="border rounded-xl overflow-hidden hover:shadow-lg transition-shadow group cursor-pointer">
-                  <div className="bg-slate-100 h-48 flex items-center justify-center">
-                    <div className="text-center">
-                      <Badge variant="outline" className="mb-2">{post.category}</Badge>
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-lg font-bold mb-3 group-hover:text-primary transition-colors">{post.title}</h3>
-                    <p className="text-muted-foreground text-sm mb-4">{post.excerpt}</p>
-                    <div className="flex items-center justify-between text-xs text-muted-foreground">
-                      <div>
-                        <div>{post.date}</div>
-                        <div>{post.author}</div>
-                      </div>
-                      <div>{post.readTime}</div>
-                    </div>
-                  </div>
-                </article>
-              ))}
+          {/* Mission & Vision */}
+          <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+              <p className="text-muted-foreground">
+                To simplify compliance and protect trucking businesses through
+                reliable, transparent, and high-quality support services.
+              </p>
             </div>
-          </div>
+            <div>
+              <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+              <p className="text-muted-foreground">
+                To become the most trusted compliance partner in the trucking
+                industry—keeping fleets safe, compliant, and moving forward.
+              </p>
+            </div>
+          </section>
 
-          {/* Pagination */}
-          <div className="flex justify-center gap-2">
-            <Button variant="outline">Previous</Button>
-            <Button className="bg-primary hover:bg-primary/90">1</Button>
-            <Button variant="outline">2</Button>
-            <Button variant="outline">3</Button>
-            <Button variant="outline">Next</Button>
-          </div>
+          {/* CTA */}
+          <section className="text-center bg-slate-950 text-white py-20 rounded-2xl">
+            <h2 className="text-3xl font-bold mb-4">
+              Ready to Stay Compliant with Confidence?
+            </h2>
+            <p className="text-slate-300 mb-8 max-w-xl mx-auto">
+              Let SafeMile Compliance handle the paperwork, audits, and safety
+              programs—so you can focus on the road ahead.
+            </p>
+            <Button className="bg-primary hover:bg-primary/90">
+              Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </section>
+
         </div>
-
-        {/* Newsletter Section */}
-        <section className="mt-20 bg-slate-50 border-y py-20">
-          <div className="container mx-auto px-4 md:px-8">
-            <div className="max-w-2xl mx-auto text-center">
-              <h2 className="text-3xl font-bold mb-4">Subscribe to Our Newsletter</h2>
-              <p className="text-muted-foreground mb-8">Get the latest articles and insights delivered to your inbox every week.</p>
-              <div className="flex gap-2 max-w-md mx-auto">
-                <input 
-                  type="email" 
-                  placeholder="Your email address" 
-                  className="flex-1 px-4 py-3 border rounded-lg outline-none focus:border-primary"
-                />
-                <Button className="bg-primary hover:bg-primary/90">Subscribe</Button>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
-      
+
       <Footer />
     </div>
   );
