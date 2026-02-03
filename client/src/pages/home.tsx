@@ -182,17 +182,17 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold mb-8">Trucking Trainings</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <PricingCard title="Truck Dispatcher" price="$390" />
-                <PricingCard title="Safety Manager" price="$690" />
-                <PricingCard title="Lawyer" price="$49" />
+                <PricingCard title="Truck Dispatcher" price="Contact Us" />
+                <PricingCard title="Safety Manager" price="Contact Us" />
+                <PricingCard title="Lawyer" price="Contact Us" />
               </div>
             </div>
             
             <div id="programs">
               <h2 className="text-3xl font-bold mb-8">Trucking Programs</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <PricingCard title="Trucking Boss" price="$5000" features={["Complete business setup", "Mentorship"]} />
-                <PricingCard title="Audit & Consulting" price="$300" />
+                <PricingCard title="Trucking Boss" price="Contact Us" features={["Complete business setup", "Mentorship"]} />
+                <PricingCard title="Audit & Consulting" price="Contact Us" />
               </div>
             </div>
           </div>

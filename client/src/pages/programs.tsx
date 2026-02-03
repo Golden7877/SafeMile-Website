@@ -48,7 +48,7 @@ export default function ProgramsPage() {
               <ProgramCard 
                 icon={<Briefcase className="h-8 w-8 text-primary" />}
                 title="Trucking Boss"
-                price="$5000"
+                price="Contact Us"
                 badge="Most Popular"
                 description="Complete business setup and mentorship program"
                 features={[
@@ -63,7 +63,7 @@ export default function ProgramsPage() {
               <ProgramCard 
                 icon={<Award className="h-8 w-8 text-primary" />}
                 title="Audit & Consulting"
-                price="$300"
+                price="Contact Us"
                 description="Expert audit and business consulting services"
                 features={[
                   "Financial audit",
