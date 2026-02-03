@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl">
             <Badge className="mb-4 bg-primary">About Us</Badge>
-            <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
+            <h1 className="text-4xl md:text-7xl font-black uppercase italic leading-tight mb-6">
               SafeMile <span className="text-primary">Compliance</span>
             </h1>
             <p className="text-lg text-slate-300">
@@ -45,9 +45,12 @@ export default function AboutPage() {
                 As your trusted third-party dispatch and compliance partner, we take care of the day-by-day operational responsibilities so you can focus on driving and growing your business. from <b>Load booking and dispatch</b> to <b>billing, collections, safety compliance, ELD managementm, audit, and IFTA reporting,</b> we handle the details that protect your authority and improve your profitabilty.
               </p>
 
-              <p className="text-muted-foreground">
+              <p className="text-muted-foreground mb-4">
                 Our Experienced team ensures your operations remain <b>compliant, efficent, and inspection ready,</b> while reducing administractive burden and elimination costly mistakes. With structured systems, proactive administractive support, we help owner-operators operate with confidence and consistency.
               </p>
+              <p className="text-muted-foreground mb-4"><b>
+               With the right partner, you don't just stay on the road - you build a stable, compliant and profitable trucking business.
+              </b></p>
             </div>
             <div className="rounded-xl overflow-hidden h-96">
               <img

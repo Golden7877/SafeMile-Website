@@ -8,10 +8,10 @@ export function Navbar() {
 
   const topLinks = [
     { name: "Dispatch", href: "/dispatch" },
-    { name: "Safety", href: "/safety" },
-    { name: "Logbook", href: "/logbook" },
-    { name: "IFTA", href: "/ifta" },
-    { name: "Accounting", href: "/accounting" },
+    // { name: "Safety", href: "/safety" },
+    // { name: "Logbook", href: "/logbook" },
+    // { name: "IFTA", href: "/ifta" },
+    { name: "Reporting & Management", href: "/accounting" },
     { name: "Administration", href: "/administration" },
     { name: "Hiring drivers", href: "/hiring-drivers" },
     // { name: "TMS", href: "/tms" },

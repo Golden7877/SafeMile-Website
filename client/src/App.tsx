@@ -25,9 +25,9 @@ function Router() {
       
       {/* Top Banner Pages */}
       <Route path="/dispatch" component={DispatchPage} />
-      <Route path="/safety" component={SafetyPage} />
-      <Route path="/logbook" component={LogbookPage} />
-      <Route path="/ifta" component={IFTAPage} />
+      {/* <Route path="/safety" component={SafetyPage} /> */}
+      {/* <Route path="/logbook" component={LogbookPage} /> */}
+      {/* <Route path="/ifta" component={IFTAPage} /> */}
       <Route path="/accounting" component={AccountingPage} />
       <Route path="/administration" component={AdministrationPage} />
       <Route path="/hiring-drivers" component={HiringDriversPage} />
