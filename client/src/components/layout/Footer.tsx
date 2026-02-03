@@ -25,7 +25,7 @@ export function Footer() {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm text-muted-foreground">Email Us</span>
-                <span className="text-lg font-semibold">contact@SafeMile Compliance.com</span>
+                <span className="text-lg font-semibold">info@safemilecompliance.com</span>
               </div>
             </div>
           </div>

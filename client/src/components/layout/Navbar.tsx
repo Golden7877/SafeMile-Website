@@ -14,17 +14,12 @@ export function Navbar() {
     { name: "Accounting", href: "/accounting" },
     { name: "Administration", href: "/administration" },
     { name: "Hiring drivers", href: "/hiring-drivers" },
-    { name: "TMS", href: "/tms" },
+    // { name: "TMS", href: "/tms" },
     { name: "MC Services", href: "/mc-services" },
     { name: "About Us", href: "/about_us" },
   ];
 
-  const mainLinks = [
-    { name: "Services", href: "/services" },
-    { name: "Softwares", href: "/softwares" },
-    { name: "Trainings", href: "/trainings" },
-    { name: "Programs", href: "/programs" },
-  ];
+  const mainLinks: { name: string; href: string }[] = [];
 
   return (
     <nav className="sticky top-0 z-50 w-full bg-white">
