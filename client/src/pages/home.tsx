@@ -177,7 +177,7 @@ export default function Home() {
         </section>
 
         {/* Trainings & Programs */}
-        <section id="trainings" className="py-20 container mx-auto px-4 md:px-8">
+        {/* <section id="trainings" className="py-20 container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div>
               <h2 className="text-3xl font-bold mb-8">Trucking Trainings</h2>
@@ -196,7 +196,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Stats */}
         <section className="py-20 bg-slate-50 border-y">
@@ -226,14 +226,14 @@ export default function Home() {
                <Button className="bg-primary hover:bg-primary/90">Watch Video</Button>
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer aspect-video">
-              <img src={alexImg} alt="Video Thumbnail" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              {/* <img src={alexImg} alt="Video Thumbnail" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" /> */}
               <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/30 transition-colors">
                 <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
                   <Play className="h-6 w-6 text-primary ml-1 fill-primary" />
                 </div>
               </div>
               <div className="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded text-sm font-medium">
-                ALEX TAYLOR
+                SafeMile Compliance
               </div>
             </div>
           </div>
