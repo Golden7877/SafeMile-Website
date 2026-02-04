@@ -132,9 +132,9 @@ export default function Home() {
             
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <SoftwareCard 
-                title="TMS" 
+                title="Compliance Management" 
                 badge="Popular"
-                description="Transportation Management System"
+                description="Compliance Management System"
                 image={tmsImg}
               />
               <SoftwareCard 
@@ -207,10 +207,10 @@ export default function Home() {
             </div>
             
             <div className="grid grid-cols-2 gap-y-12 gap-x-8">
-              <Stat value="150M" label="Client Gross" sub="Total gross revenue generated for our clients" />
-              <Stat value="1800+" label="Active Trucks" sub="Trucks currently under our management" />
-              <Stat value="200+" label="Employees" sub="Dedicated professionals working for you" />
-              <Stat value="300+" label="Happy Clients" sub="Satisfied trucking companies" />
+              <Stat value="100M" label="Client Gross" sub="Total gross revenue generated for our clients" />
+              <Stat value="350+" label="Active Trucks" sub="Trucks currently under our management" />
+              <Stat value="100+" label="Employees" sub="Dedicated professionals working for you" />
+              <Stat value="200+" label="Happy Clients" sub="Satisfied trucking companies" />
             </div>
           </div>
         </section>
@@ -253,7 +253,7 @@ export default function Home() {
                  <div className="absolute bottom-0 left-0 p-8 text-white max-w-xl">
                    <Badge className="bg-primary hover:bg-primary mb-4 border-0">News</Badge>
                    <h3 className="text-2xl font-bold mb-2">What Does it Take to Be a Successful Owner-Operator?</h3>
-                   <p className="text-slate-300">September 27, 2025 | Alex Taylor | 5 min read</p>
+                   <p className="text-slate-300">September 27, 2025 | Head of Operation | 5 min read</p>
                  </div>
               </div>
               

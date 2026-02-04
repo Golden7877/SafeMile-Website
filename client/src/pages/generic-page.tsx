@@ -119,11 +119,11 @@ export default function GenericPage({ title }: { title: string }) {
               </p>
               <div className="grid grid-cols-2 gap-8">
                 <div>
-                   <p className="text-4xl font-black text-slate-900 mb-1">150M</p>
+                   <p className="text-4xl font-black text-slate-900 mb-1">100M</p>
                    <p className="text-sm font-bold">Client Gross</p>
                 </div>
                 <div>
-                   <p className="text-4xl font-black text-slate-900 mb-1">200+</p>
+                   <p className="text-4xl font-black text-slate-900 mb-1">350+</p>
                    <p className="text-sm font-bold">Active Trucks</p>
                 </div>
               </div>
@@ -149,12 +149,12 @@ export default function GenericPage({ title }: { title: string }) {
                   </div>
                   <div>
                     <p className="font-bold">Watch on YouTube</p>
-                    <p className="text-sm text-muted-foreground">Alex Taylor - CEO SafeMile Compliance</p>
+                    <p className="text-sm text-muted-foreground"> SafeMile Compliance</p>
                   </div>
                 </div>
               </div>
               <div className="relative rounded-2xl overflow-hidden aspect-video shadow-2xl group cursor-pointer">
-                <img src={alexImg} alt="Alex Taylor" className="w-full h-full object-cover" />
+                {/* <img src={alexImg} alt="Alex Taylor" className="w-full h-full object-cover" /> */}
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 flex items-center justify-center transition-all">
                   <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
                     <Play className="h-6 w-6 text-primary fill-primary" />

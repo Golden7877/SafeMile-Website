@@ -117,8 +117,8 @@ export default function DispatchPage() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <StatCard value="$2.04" label="Average CPM" sub="Cost per mile achieved" />
               <StatCard value="$2.68" label="Top CPM" sub="Best client performance" />
-              <StatCard value="150M" label="Total Gross" sub="Revenue generated for clients" />
-              <StatCard value="1800+" label="Active Trucks" sub="Currently under dispatch" />
+              <StatCard value="100M" label="Total Gross" sub="Revenue generated for clients" />
+              <StatCard value="350+" label="Active Trucks" sub="Currently under dispatch" />
             </div>
           </div>
         </section>
