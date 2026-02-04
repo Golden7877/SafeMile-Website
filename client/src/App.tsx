@@ -16,7 +16,8 @@ import HiringDriversPage from "@/pages/hiring-drivers";
 import TMSPage from "@/pages/tms";
 import MCServicesPage from "@/pages/mc-services";
 import BlogPage from "@/pages/about_us";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import ScrollToTop from "@/pages/ScrollToTop";
 
 function Router() {
   return (
@@ -42,14 +43,14 @@ function Router() {
       <Route path="/softwares">
         {() => <GenericPage title="Trucking Softwares" />}
       </Route>
-      <Route path="/trainings">
+      {/* <Route path="/trainings">
         {() => <GenericPage title="Trucking Trainings" />}
       </Route>
       <Route path="/programs">
         {() => <GenericPage title="Trucking Programs" />}
       </Route>
 
-      <Route component={NotFound} />
+      <Route component={NotFound} /> */}
     </Switch>
   );
 }
@@ -58,6 +59,7 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
+        <ScrollToTop />
         <Toaster />
         <Router />
         <Analytics />
