@@ -11,7 +11,7 @@ import SafetyPage from "@/pages/safety";
 import LogbookPage from "@/pages/logbook";
 import IFTAPage from "@/pages/ifta";
 import ReportingManagementPage from "@/pages/reporting-management";
-import AdministrationPage from "@/pages/administration";
+import ComplianceManagementPage from "@/pages/compliance-management";
 import HiringDriversPage from "@/pages/hiring-drivers";
 import TMSPage from "@/pages/tms";
 import MCServicesPage from "@/pages/mc-services";
@@ -29,7 +29,7 @@ function Router() {
       {/* <Route path="/logbook" component={LogbookPage} /> */}
       {/* <Route path="/ifta" component={IFTAPage} /> */}
       <Route path="/reporting-management" component={ReportingManagementPage} />
-      <Route path="/administration" component={AdministrationPage} />
+      <Route path="/compliance-management" component={ComplianceManagementPage} />
       <Route path="/hiring-drivers" component={HiringDriversPage} />
       <Route path="/tms" component={TMSPage} />
       <Route path="/mc-services" component={MCServicesPage} />

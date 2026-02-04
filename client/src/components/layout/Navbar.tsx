@@ -12,10 +12,10 @@ export function Navbar() {
     // { name: "Logbook", href: "/logbook" },
     // { name: "IFTA", href: "/ifta" },
     { name: "Reporting & Management", href: "/reporting-management" },
-    { name: "Administration", href: "/administration" },
-    { name: "Hiring drivers", href: "/hiring-drivers" },
+    { name: "Compliance Management", href: "/compliance-management" },
+    { name: "Driver Hiring", href: "/hiring-drivers" },
     // { name: "TMS", href: "/tms" },
-    { name: "MC Services", href: "/mc-services" },
+    // { name: "MC Services", href: "/mc-services" },
     { name: "About Us", href: "/about_us" },
   ];
 

@@ -3,7 +3,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Clipboard, FileCheck, Users, Clock } from "lucide-react";
 
-export default function AdministrationPage() {
+export default function ComplianceManagementPage() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Navbar />
@@ -15,11 +15,11 @@ export default function AdministrationPage() {
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
-              Administrative <span className="text-primary">Support Services</span>
+              Compliance <span className="text-primary">Management Services</span>
             </h1>
-            <p className="text-lg text-slate-300 mb-8">Streamlined administrative support to keep your operations running smoothly.</p>
+            <p className="text-lg text-slate-300 mb-8">Streamlined compliance support to keep your operations running smoothly.</p>
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold">
-              Administration - $25/mo
+              Compliance Management - $25/mo
             </Button>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function AdministrationPage() {
         {/* Services */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-4xl font-bold mb-12">Administrative Services</h2>
+            <h2 className="text-4xl font-bold mb-12">Compliance Management Services</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <ServiceCard 
@@ -59,7 +59,7 @@ export default function AdministrationPage() {
         {/* Features */}
         <section className="py-20 bg-slate-50 border-y">
           <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-3xl font-bold mb-8">Administrative Support Includes</h2>
+            <h2 className="text-3xl font-bold mb-8">Compliance Management Support Includes</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
               {[
@@ -85,7 +85,7 @@ export default function AdministrationPage() {
         <section className="py-20 container mx-auto px-4 md:px-8">
           <div className="bg-slate-950 rounded-3xl p-12 text-white text-center">
             <h2 className="text-4xl font-bold mb-6">Focus on Growing Your Business</h2>
-            <p className="text-slate-400 mb-8 text-lg">Let us handle the administrative details.</p>
+            <p className="text-slate-400 mb-8 text-lg">Let us handle the compliance details.</p>
             <Button size="lg" className="bg-primary hover:bg-primary/90">
               Get Started
             </Button>

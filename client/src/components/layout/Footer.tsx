@@ -10,14 +10,14 @@ export function Footer() {
     <footer className="bg-white pt-20 pb-10 border-t">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
-          
+
           {/* Contact Info */}
           <div>
             <h2 className="text-3xl font-bold mb-8">Our contacts</h2>
             <p className="text-muted-foreground mb-8 max-w-md">
               Visit one of our SafeMile Compliance hubs or speak with our business. Contact us today!
             </p>
-            
+
             <div className="space-y-4">
               <div className="flex flex-col">
                 <span className="text-sm text-muted-foreground">Call Us</span>
@@ -36,7 +36,7 @@ export function Footer() {
               <div className="h-8 w-1 bg-primary rounded-full"></div>
               <h3 className="text-xl font-bold">Want to talk with us?</h3>
             </div>
-            
+
             <form className="space-y-4">
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-2">
@@ -56,7 +56,7 @@ export function Footer() {
                 <Label htmlFor="email">Email</Label>
                 <Input id="email" type="email" placeholder="Email" />
               </div>
-              
+
               <div className="flex items-center space-x-2 pt-2">
                 <Checkbox id="terms" />
                 <label
@@ -75,16 +75,25 @@ export function Footer() {
         </div>
 
         <div className="border-t pt-10">
-          <h4 className="font-bold mb-6">Connect With Us</h4>
-          <p className="text-sm text-muted-foreground mb-6">Connect with our social and the distinct trucking social media.</p>
-          
-          <div className="flex flex-wrap gap-8">
-            <SocialIcon icon={Youtube} label="Youtube" color="text-red-600" />
-            <SocialIcon icon={MessageCircle} label="Whatsapp" color="text-green-500" />
-            <SocialIcon icon={Send} label="Telegram" color="text-blue-400" />
-            <SocialIcon icon={Facebook} label="Facebook" color="text-blue-600" />
-            <SocialIcon icon={Instagram} label="Instagram" color="text-pink-600" />
-            <SocialIcon icon={Linkedin} label="LinkedIn" color="text-blue-700" />
+          <h4 className="font-bold mb-4">Ready to Get Started?</h4>
+          <p className="text-sm text-muted-foreground mb-6">
+            Talk to our logistics experts and get reliable, compliant, and efficient trucking solutions.
+          </p>
+
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/contact"
+              className="px-6 py-3 rounded-lg bg-primary text-white text-sm font-semibold hover:opacity-90 transition"
+            >
+              Get Free Consultation
+            </a>
+
+            <a
+              href="tel:+1234567890"
+              className="px-6 py-3 rounded-lg border text-sm font-semibold hover:bg-muted transition"
+            >
+              Call Now
+            </a>
           </div>
 
           <div className="flex flex-col md:flex-row justify-between items-center mt-12 text-xs text-muted-foreground border-t pt-8">

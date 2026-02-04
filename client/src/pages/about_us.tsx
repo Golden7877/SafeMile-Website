@@ -49,7 +49,7 @@ export default function AboutPage() {
                 Our Experienced team ensures your operations remain <b>compliant, efficent, and inspection ready,</b> while reducing administractive burden and elimination costly mistakes. With structured systems, proactive administractive support, we help owner-operators operate with confidence and consistency.
               </p>
               <p className="text-muted-foreground mb-4"><b>
-               With the right partner, you don't just stay on the road - you build a stable, compliant and profitable trucking business.
+                With the right partner, you don't just stay on the road - you build a stable, compliant and profitable trucking business.
               </b></p>
             </div>
             <div className="rounded-xl overflow-hidden h-96">
@@ -61,66 +61,57 @@ export default function AboutPage() {
             </div>
           </section>
 
-          {/* Servies we offer */}
           <section>
             <h2 className="text-3xl font-bold mb-10 text-center">
-              Servies we offer
+              Services We Offer
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="border rounded-xl p-8 text-center">
-                <ShieldCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
-                <h3 className="font-bold mb-3">Load Booking & Dispatch</h3>
-                <p className="text-sm text-muted-foreground">
-                  Simplify load booking and dispatch with faster assignments, better visibility, and reliable delivery execution.
-                </p>
-              </div>
 
-              <div className="border rounded-xl p-8 text-center">
-                <Truck className="mx-auto mb-4 h-10 w-10 text-primary" />
-                <h3 className="font-bold mb-3">Customer Invoicing & Collections</h3>
-                <p className="text-sm text-muted-foreground">
-                  Accurate invoicing and efficient collections to keep payments on time and operations running smoothly.
-                </p>
-              </div>
+            <ul className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-4 list-disc list-inside text-muted-foreground">
+              <li>
+                <span className="font-medium text-foreground">
+                  Load Booking & Dispatch
+                </span>
+              </li>
 
-              <div className="border rounded-xl p-8 text-center">
-                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
-                <h3 className="font-bold mb-3">Safety & Compliance Managemenet</h3>
-                <p className="text-sm text-muted-foreground">
-                  Safety plans built to protect your drivers, ensure compliance, and strengthen your authority.
-                </p>
-              </div>
+              <li>
+                <span className="font-medium text-foreground">
+                  Customer Invoicing & Collections
+                </span>
+              </li>
 
-              <div className="border rounded-xl p-8 text-center">
-                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
-                <h3 className="font-bold mb-3">IFTA Filing & Reporting</h3>
-                <p className="text-sm text-muted-foreground">
-                  Hassle-free IFTA filing with precise fuel tax reporting and on-time submissions for multi-state operations.
-                </p>
-              </div>
-              <div className="border rounded-xl p-8 text-center">
-                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
-                <h3 className="font-bold mb-3">ELD & Hours of Service Management</h3>
-                <p className="text-sm text-muted-foreground">
-                  Efficient ELD and Hours of Service management to maintain compliance, improve driver productivity, and avoid penalties.
-                </p>
-              </div>
-              <div className="border rounded-xl p-8 text-center">
-                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
-                <h3 className="font-bold mb-3">Audit Handling & Regulatory Support</h3>
-                <p className="text-sm text-muted-foreground">
-                  Expert support for audits and regulatory requirements to ensure compliance, minimize risk, and protect your operating authority.
-                </p>
-              </div>
-              <div className="border rounded-xl p-8 text-center">
-                <FileCheck className="mx-auto mb-4 h-10 w-10 text-primary" />
-                <h3 className="font-bold mb-3">Driver Hiring & Onboard Assistance</h3>
-                <p className="text-sm text-muted-foreground">
-                  Efficient driver hiring and onboarding assistance to ensure qualified drivers, proper documentation, and regulatory compliance.
-                </p>
-              </div>
-            </div>
+              <li>
+                <span className="font-medium text-foreground">
+                  Safety & Compliance Management
+                </span>
+              </li>
+
+              <li>
+                <span className="font-medium text-foreground">
+                  IFTA Filing & Reporting
+                </span>
+              </li>
+
+              <li>
+                <span className="font-medium text-foreground">
+                  ELD & Hours of Service Management
+                </span>
+              </li>
+
+              <li>
+                <span className="font-medium text-foreground">
+                  Audit Handling & Regulatory Support
+                </span>
+              </li>
+
+              <li>
+                <span className="font-medium text-foreground">
+                  Driver Hiring & Onboarding Assistance
+                </span>
+              </li>
+            </ul>
           </section>
+
+
 
           {/* Stats */}
           <section className="bg-slate-50 rounded-2xl py-16">
@@ -155,17 +146,15 @@ export default function AboutPage() {
           {/* Mission & Vision */}
           <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
+              <h2 className="text-2xl font-bold mb-4">Vision Statement</h2>
               <p className="text-muted-foreground">
-                To simplify compliance and protect trucking businesses through
-                reliable, transparent, and high-quality support services.
+                Our vision is to become a trusted insdustry leader by keeping fleets compliant, profitable, and confidently moving forward through reliable and high-quality services.
               </p>
             </div>
             <div>
-              <h2 className="text-2xl font-bold mb-4">Our Vision</h2>
+              <h2 className="text-2xl font-bold mb-4">Mission Statement</h2>
               <p className="text-muted-foreground">
-                To become the most trusted compliance partner in the trucking
-                industry—keeping fleets safe, compliant, and moving forward.
+                Our mission is to deliver expert dispatch and safety compliance solutions that maximize fleet performance, ensure regulatory compliance, and create long-term success for our clients.
               </p>
             </div>
           </section>

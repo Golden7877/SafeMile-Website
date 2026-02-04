@@ -90,10 +90,10 @@ export default function Home() {
               href="/reporting-management"
             />
             <ServiceCard 
-              title="Administration" 
-              description="Streamlined admin support for your fleet."
+              title="Compliance Management" 
+              description="Streamlined compliance support for your fleet."
               price="Custom Pricing"
-              href="/administration"
+              href="/compliance-management"
             />
             <ServiceCard 
               title="Hiring Drivers" 
