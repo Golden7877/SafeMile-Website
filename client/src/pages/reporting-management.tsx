@@ -66,13 +66,13 @@ export default function ReportingManagementPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl">
               {[
-                "Custom KPI dashboards",
+                "Revenue vs Expense Reports",
                 "Automated compliance exports",
                 "Fuel and route cost analysis",
                 "Driver performance scoring",
                 "Monthly and ad-hoc reports",
                 "Alerting for anomalies",
-                "Integration with accounting systems",
+                "SMS Score report and analysis",
                 "Forecasting and trend analysis",
               ].map((item, i) => (
                 <div key={i} className="flex gap-3">

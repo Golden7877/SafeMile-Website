@@ -7,13 +7,13 @@ import { Facebook, Instagram, Linkedin, Twitter, Youtube, MessageCircle, Send } 
 
 export function Footer() {
   return (
-    <footer className="bg-white pt-20 pb-10 border-t">
+    <footer id="contact" className="bg-white pt-20 pb-10 border-t">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-20">
 
           {/* Contact Info */}
           <div>
-            <h2 className="text-3xl font-bold mb-8">Our contacts</h2>
+            <h2 className="text-3xl font-bold mb-8">Contact us</h2>
             <p className="text-muted-foreground mb-8 max-w-md">
               Visit one of our SafeMile Compliance hubs or speak with our business. Contact us today!
             </p>

@@ -17,6 +17,7 @@ export function Navbar() {
     // { name: "TMS", href: "/tms" },
     // { name: "MC Services", href: "/mc-services" },
     { name: "About Us", href: "/about_us" },
+    { name: "FAQ", href: "/faq" },
   ];
 
   const mainLinks: { name: string; href: string }[] = [];
@@ -41,7 +42,9 @@ export function Navbar() {
             })}
           </div>
           <div className="text-right py-1">
-            <div className="text-sm font-bold text-slate-900">Number</div>
+            <div className="text-sm font-bold text-slate-900">
+              <a href="tel:9099016499">909-901-6499</a>
+            </div>
             <div className="text-[10px] text-slate-400 -mt-1">Feel free to call us anytime</div>
           </div>
         </div>
@@ -52,13 +55,13 @@ export function Navbar() {
         <div className="container flex h-20 items-center justify-between mx-auto px-4 md:px-8">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-1">
-               {/* <div className="bg-primary p-1 rounded">
+              {/* <div className="bg-primary p-1 rounded">
                  <Truck className="h-4 w-4 text-white" />
                </div> */}
-               <div className="h-13 w-40">
+              <div className="h-13 w-40">
                 <img src="Logo.png" alt="logo"></img>
-               </div>
-               {/* <div className="text-xl font-black tracking-tighter uppercase italic">
+              </div>
+              {/* <div className="text-xl font-black tracking-tighter uppercase italic">
                  Trucking<span className="text-primary">42</span>
                </div> */}
             </Link>
@@ -81,10 +84,21 @@ export function Navbar() {
           </div>
 
           <div className="flex items-center gap-4">
-            <Button variant="default" className="hidden md:flex bg-primary hover:bg-primary/90 text-white font-bold h-12 px-8 text-base">
+            <Button
+              variant="default"
+              className="hidden md:flex bg-primary hover:bg-primary/90 text-white font-bold h-12 px-8 text-base"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  const yOffset = -80; // adjust if navbar height different
+                  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
+            >
               Contact Us
             </Button>
-            
+
             {/* Mobile Nav */}
             <Sheet>
               <SheetTrigger asChild className="md:hidden">

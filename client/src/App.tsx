@@ -16,6 +16,7 @@ import HiringDriversPage from "@/pages/hiring-drivers";
 import TMSPage from "@/pages/tms";
 import MCServicesPage from "@/pages/mc-services";
 import BlogPage from "@/pages/about_us";
+import FAQPage from "@/pages/faq";
 import { Analytics } from "@vercel/analytics/react";
 import ScrollToTop from "@/pages/ScrollToTop";
 
@@ -35,6 +36,7 @@ function Router() {
       <Route path="/tms" component={TMSPage} />
       <Route path="/mc-services" component={MCServicesPage} />
       <Route path="/about_us" component={BlogPage} />
+      <Route path="/faq" component={FAQPage} />
 
       {/* Main Nav Pages */}
       <Route path="/services">

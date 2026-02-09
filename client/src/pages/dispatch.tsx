@@ -81,7 +81,7 @@ export default function DispatchPage() {
         </section>
 
         {/* Pricing Section */}
-        <section className="py-20 bg-slate-50 border-y">
+        {/* <section className="py-20 bg-slate-50 border-y">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-4xl font-bold mb-12">Dispatch Pricing</h2>
             
@@ -107,7 +107,7 @@ export default function DispatchPage() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Results Section */}
         <section className="py-20 bg-white">

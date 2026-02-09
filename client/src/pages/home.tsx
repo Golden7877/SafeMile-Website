@@ -17,18 +17,18 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative bg-slate-900 text-white py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src={officeHero} 
-            alt="Trucking Office" 
+          <img
+            src={officeHero}
+            alt="Trucking Office"
             className="w-full h-full object-cover opacity-30"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-transparent"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-2xl animate-in slide-in-from-left duration-700">
             <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
@@ -50,157 +50,130 @@ export default function Home() {
       </section>
 
       <main className="flex-1">
-        
+
         {/* Services Section */}
         <section id="services" className="py-20 container mx-auto px-4 md:px-8">
-          <h2 className="text-3xl font-bold mb-2">Trucking Services</h2>
-          <p className="text-muted-foreground mb-10">Reliable and support Services with top-leading 3rd parties</p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <ServiceCard 
-              title="Dispatch" 
-              description="Efficient dispatch services to keep your trucks moving."
-              price="Custom Pricing"
-              // image={dispatcherImg}
-              
-              href="/dispatch"
-            />
-            <ServiceCard 
-              title="Safety" 
-              description="Safety first. We help you maintain safety compliance."
-              price="Custom Pricing"
-              href="/safety"
-            />
-            <ServiceCard 
-              title="Logbook" 
-              description="Monitor logbooks accurately and easily."
-              price="Custom Pricing"
-              href="/logbook"
-            />
-            <ServiceCard 
-              title="IFTA" 
-              description="Quarterly IFTA calculations & reports."
-              price="Custom Pricing"
-              href="/ifta"
-            />
-            <ServiceCard 
-              title="Reporting & Management" 
-              description="Actionable reporting and fleet management solutions."
-              price="Custom Pricing"
-              href="/reporting-management"
-            />
-            <ServiceCard 
-              title="Compliance Management" 
-              description="Streamlined compliance support for your fleet."
-              price="Custom Pricing"
-              href="/compliance-management"
-            />
-            <ServiceCard 
-              title="Driver Hiring" 
-              description="Recruiting services to find qualified drivers."
-              price="Custom Pricing"
-              href="/hiring-drivers"
-            />
-             {/* <ServiceCard 
-              title="MC Setup" 
-              description="We help you get your MC authority active."
-              price="Custom Pricing"
-              href="/mc-services"
-            /> */}
-            
-            {/* <div className="col-span-1 md:col-span-2 relative group overflow-hidden rounded-xl h-64">
-              <img src={partnerImg} alt="partnerimg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" />
-              <div className="absolute inset-0 bg-slate-900/70 p-8 flex flex-col justify-end">
-                <h3 className="text-white text-2xl font-bold mb-2">Become our partner</h3>
-                <p className="text-slate-300 text-sm">Join our network and grow with us.</p>
-              </div>
-            </div>
+  <h2 className="text-3xl font-bold mb-2 text-center">Trucking Services</h2>
+  <p className="text-muted-foreground mb-10 text-center">
+    Reliable and support Services with top-leading 3rd parties
+  </p>
 
-            <div className="col-span-1 md:col-span-2 bg-slate-50 rounded-xl p-8 flex flex-col justify-center border border-slate-100">
-              <h3 className="text-xl font-bold mb-2">Choose any service and receive a <span className="text-primary">$100</span> for each truck</h3>
-              <p className="text-muted-foreground text-sm mb-6">Limited time offer for new partners.</p>
-              <Button className="w-fit bg-primary">Order Now</Button>
-            </div> */}
-          </div>
-        </section>
+  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 text-center">
+    <ServiceCard
+      title="Dispatch"
+      description="Efficient dispatch services to keep your trucks moving."
+      href="/dispatch"
+      image="/attached_assets/generated_images/dispatch.jpg"
+    />
 
-        {/* Article Section - Center + Full Page */}
-<section id="software-article" className="py-24 bg-slate-50 flex justify-center">
-  <div className="w-full max-w-[1400px] px-6 md:px-12 lg:px-20">
+    <ServiceCard
+      title="Safety"
+      description="Safety first. We help you maintain safety compliance."
+      href="/safety"
+      image="/attached_assets/generated_images/Safety.jpg"
+    />
 
-    <article className="bg-white rounded-3xl shadow-sm p-10 md:p-16 text-center">
+    <ServiceCard
+      title="Logbook"
+      description="Monitor logbooks accurately and easily."
+      href="/logbook"
+      image="/attached_assets/generated_images/Logbook.jpg"
+    />
 
-      {/* Title */}
-      <h1 className="text-4xl md:text-5xl font-bold mb-6">
-        SafeMile Compliance Software & Trucking Programs
-      </h1>
+    <ServiceCard
+      title="IFTA"
+      description="Quarterly IFTA calculations & reports."
+      href="/ifta"
+      image="/attached_assets/generated_images/IFTA.jpg"
+    />
 
-      <p className="text-muted-foreground text-lg md:text-xl mb-12 max-w-4xl mx-auto">
-        SafeMile provides advanced compliance software, trucking tools, and professional training 
-        programs designed to streamline logistics operations, ensure FMCSA compliance, and support 
-        trucking business growth.
-      </p>
+    <ServiceCard
+      title="Reporting & Management"
+      description="Actionable reporting and fleet management solutions."
+      href="/reporting-management"
+      image="/attached_assets/generated_images/Management.jpg"
+    />
 
-      {/* Software */}
-      <div className="mb-14">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Compliance Software Services
-        </h2>
+    <ServiceCard
+      title="Compliance Management"
+      description="Streamlined compliance support for your fleet."
+      href="/compliance-management"
+      image="/attached_assets/generated_images/Compliance-management.jpg"
+    />
 
-        <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
-          Our proprietary software helps trucking companies automate operations, manage compliance, 
-          and increase efficiency through powerful digital tools.
-        </p>
-
-        <ul className="space-y-3 text-lg max-w-2xl mx-auto">
-          <li>✔ Compliance Management System</li>
-          <li>✔ Dispatch & Load Planning Tools</li>
-          <li>✔ Driver Mobile Application</li>
-          <li>✔ Reporting & Management Dashboard</li>
-          <li>✔ FMCSA Compliant ELD Solutions</li>
-        </ul>
-      </div>
-
-      {/* Investment */}
-      <div className="mb-14">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Invest in the Future of Logistics
-        </h2>
-
-        <p className="text-muted-foreground max-w-3xl mx-auto">
-          SafeMile continues to innovate in transportation technology and logistics services. 
-          Partner with us and invest in the future of smart, compliant, and efficient trucking operations.
-        </p>
-      </div>
-
-      {/* Training */}
-      <div className="mb-14">
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Professional Trucking Trainings
-        </h2>
-
-        <ul className="space-y-3 text-lg max-w-2xl mx-auto">
-          <li>✔ Truck Dispatcher Training</li>
-          <li>✔ Safety Manager Training</li>
-          <li>✔ Transportation Legal Training</li>
-        </ul>
-      </div>
-
-      {/* Programs */}
-      <div>
-        <h2 className="text-2xl md:text-3xl font-bold mb-4">
-          Trucking Business Programs
-        </h2>
-
-        <ul className="space-y-3 text-lg max-w-2xl mx-auto">
-          <li>✔ Trucking Boss – Complete business setup & mentorship</li>
-          <li>✔ Audit & Consulting for trucking companies</li>
-        </ul>
-      </div>
-
-    </article>
+    <ServiceCard
+      title="Driver Hiring"
+      description="Recruiting services to find qualified drivers."
+      href="/hiring-drivers"
+      image="/attached_assets/generated_images/Driver-hiring.jpg"
+    />
   </div>
 </section>
+
+        {/* Article Section - Center + Full Page */}
+        <section id="software-article" className="py-24 bg-slate-50 flex justify-center">
+          <div className="w-full max-w-[1400px] px-6 md:px-12 lg:px-20">
+
+            <article className="bg-white rounded-3xl shadow-sm p-10 md:p-16 text-center">
+
+              {/* Title */}
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                SafeMile Compliance & Trucking Programs
+              </h1>
+
+              <p className="text-muted-foreground text-lg md:text-xl mb-12 max-w-4xl mx-auto">
+                SafeMile provides advanced compliance services, trucking tools, and professional trucking service to streamline logistics operations, ensure FMCSA compliance, and support trucking business growth.
+              </p>
+
+              {/* Software */}
+              <div className="mb-14">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                  Compliance Services
+                </h2>
+
+                <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
+                  Our compliance services help trucking companies stay audit-ready, meet regulatory requirements, and operate smoothly through expert management and reliable support.
+                </p>
+
+                <ul className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto text-lg">
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    ✔ DOT & FMCSA compliance management
+                  </li>
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    ✔ Driver qualification file (DQF) management
+                  </li>
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    ✔ ELD & HOS monitoring
+                  </li>
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    ✔ IFTA reporting & fuel tax management
+                  </li>
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    ✔ Audit support & safety review preparation
+                  </li>
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    ✔ Permit & licensing assistance
+                  </li>
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    ✔ 24/7 compliance support and consultation
+                  </li>
+
+                  <li className="bg-slate-100 p-4 rounded-xl shadow-sm hover:bg-primary hover:text-white hover:shadow-lg transition duration-300 cursor-pointer">
+                    New authority (MC/DOT) setup & activation
+                  </li>
+                </ul>
+              </div>
+
+            </article>
+          </div>
+        </section>
 
         {/* Trainings & Programs */}
         {/* <section id="trainings" className="py-20 container mx-auto px-4 md:px-8">
@@ -231,7 +204,7 @@ export default function Home() {
               <h2 className="text-3xl font-bold mb-6 max-w-md">Our team's experience and successful actions guarantee that your MC achieves the desired results.</h2>
               <Button variant="link" className="text-primary p-0 h-auto font-semibold">Discover Our Results <ArrowRight className="ml-2 h-4 w-4" /></Button>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-y-12 gap-x-8">
               <Stat value="100M" label="Client Gross" sub="Total gross revenue generated for our clients" />
               <Stat value="350+" label="Active Trucks" sub="Trucks currently under our management" />
@@ -245,18 +218,29 @@ export default function Home() {
         <section className="py-20 container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-               <h2 className="text-3xl font-bold mb-6">SafeMile Compliance: Where Reliability Meets Innovation</h2>
-               <p className="text-muted-foreground mb-6">
-                 Explore our comprehensive suite of logistics solutions designed to propel your business forward. We combine technology with expertise.
-               </p>
-               <Button className="bg-primary hover:bg-primary/90">Watch Video</Button>
+              <h2 className="text-3xl font-bold mb-6">SafeMile Compliance: Where Reliability Meets Innovation</h2>
+              <p className="text-muted-foreground mb-6">
+                Explore our comprehensive suite of logistics solutions designed to propel your business forward. We combine technology with expertise.
+              </p>
+              <Button
+              variant="default"
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  const yOffset = -80; // adjust if navbar height different
+                  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
+            >
+              Contact Us
+            </Button>
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer aspect-video">
-              {/* <img src={alexImg} alt="Video Thumbnail" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" /> */}
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center group-hover:bg-black/30 transition-colors">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform">
-                  <Play className="h-6 w-6 text-primary ml-1 fill-primary" />
-                </div>
+              <img src="/attached_assets/generated_images/Trucking_Logistics.jpg" alt="Image Thumbnail" className="w-full h-full object-cover transition-transform duration-400 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/10 flex items-center justify-center group-hover:bg-black/410 transition-colors">
+                
               </div>
               <div className="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded text-sm font-medium">
                 SafeMile Compliance
@@ -264,9 +248,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         {/* About Us Section */}
-        <section id="about us" className="py-20 bg-white">
+        {/* <section id="about us" className="py-20 bg-white">
           <div className="container mx-auto px-4 md:px-8">
             <div className="flex justify-between items-end mb-10">
               <h2 className="text-3xl font-bold">SafeMile Compliance about us</h2>
@@ -289,7 +273,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
       </main>
       <Footer />
@@ -301,14 +285,12 @@ export default function Home() {
 function ServiceCard({
   title,
   description,
-  price,
   image,
   dark,
   href,
 }: {
   title: string
   description: string
-  price: string
   image?: string
   dark?: boolean
   href?: string
@@ -316,7 +298,7 @@ function ServiceCard({
   return (
     <div
       className={`
-        relative p-6 rounded-xl border h-64
+        relative p-6 rounded-xl border h-40
         flex flex-col justify-between overflow-hidden
         transition-all duration-300 group cursor-pointer
         hover:-translate-y-1 hover:shadow-xl
@@ -354,22 +336,6 @@ function ServiceCard({
       </div>
 
       <div className="relative z-10 flex justify-between items-end">
-        <div>
-          <span className="text-xs uppercase opacity-70 block mb-1">
-            Starting at
-          </span>
-          <span className="text-2xl font-bold group-hover:text-white">
-            {price}
-          </span>
-        </div>
-
-        <a
-          href={href || '#'}
-          aria-label={`View details for ${title}`}
-          className="p-2 rounded-full bg-white/10 group-hover:bg-white/20 transition-colors"
-        >
-          <ArrowRight className="h-4 w-4 text-white" />
-        </a>
       </div>
     </div>
   )
@@ -382,11 +348,11 @@ function SoftwareCard({ title, description, image, badge }: { title: string, des
       <div className="p-6 pb-2">
         <div className="flex justify-between items-start mb-1">
           <div className="flex items-center gap-2">
-             {/* Icon Placeholder */}
-             <div className="w-6 h-6 rounded bg-primary/10 flex items-center justify-center text-primary">
-               <Settings className="w-4 h-4" />
-             </div>
-             <h3 className="font-bold">{title}</h3>
+            {/* Icon Placeholder */}
+            <div className="w-6 h-6 rounded bg-primary/10 flex items-center justify-center text-primary">
+              <Settings className="w-4 h-4" />
+            </div>
+            <h3 className="font-bold">{title}</h3>
           </div>
           {badge && <Badge variant="secondary" className="text-xs">{badge}</Badge>}
         </div>
@@ -438,13 +404,13 @@ function Stat({ value, label, sub }: { value: string, label: string, sub: string
 function BlogCard({ title, category }: { title: string, category: string }) {
   return (
     <div className="bg-slate-100 rounded-xl p-6 h-full flex flex-col justify-between hover:bg-slate-200 transition-colors cursor-pointer">
-       <div>
-         <Badge variant="outline" className="mb-3 bg-white">{category}</Badge>
-         <h3 className="font-bold text-lg leading-snug">{title}</h3>
-       </div>
-       <div className="text-xs text-muted-foreground mt-4">
-         Read More
-       </div>
+      <div>
+        <Badge variant="outline" className="mb-3 bg-white">{category}</Badge>
+        <h3 className="font-bold text-lg leading-snug">{title}</h3>
+      </div>
+      <div className="text-xs text-muted-foreground mt-4">
+        Read More
+      </div>
     </div>
   )
 }

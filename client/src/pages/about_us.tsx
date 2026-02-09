@@ -2,7 +2,10 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, ShieldCheck, Truck, FileCheck } from "lucide-react";
+import { ArrowRight, ShieldCheck, Truck, FileCheck, CheckCircle2, Zap, Users, TrendingUp, Clock } from "lucide-react";
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+
+
 
 const alexImg = "/attached_assets/generated_images/alex_taylor_video_thumbnail.png";
 
@@ -113,46 +116,30 @@ export default function AboutPage() {
 
 
 
-          {/* Stats */}
-          <section className="bg-slate-50 rounded-2xl py-16">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-              <div>
-                <div className="text-3xl font-bold text-primary">10+</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Years Experience
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">1,000+</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Fleets Supported
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">98%</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Compliance Success
-                </div>
-              </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">24/7</div>
-                <div className="text-sm text-muted-foreground mt-1">
-                  Ongoing Support
-                </div>
-              </div>
+          {/* Results Section */}
+        <section className="py-20 bg-white">
+          <div className="container mx-auto px-4 md:px-8">
+            <h2 className="text-4xl font-bold mb-12">Our Results</h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <StatCard value="$2.04" label="Average CPM" sub="Cost per mile achieved" />
+              <StatCard value="$2.68" label="Top CPM" sub="Best client performance" />
+              <StatCard value="100M" label="Total Gross" sub="Revenue generated for clients" />
+              <StatCard value="350+" label="Active Trucks" sub="Currently under dispatch" />
             </div>
-          </section>
+          </div>
+        </section>
 
           {/* Mission & Vision */}
           <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
-              <h2 className="text-2xl font-bold mb-4">Vision Statement</h2>
+              <h2 className="text-2xl font-bold mb-4">Vision</h2>
               <p className="text-muted-foreground">
                 Our vision is to become a trusted insdustry leader by keeping fleets compliant, profitable, and confidently moving forward through reliable and high-quality services.
               </p>
             </div>
             <div>
-              <h2 className="text-2xl font-bold mb-4">Mission Statement</h2>
+              <h2 className="text-2xl font-bold mb-4">Mission</h2>
               <p className="text-muted-foreground">
                 Our mission is to deliver expert dispatch and safety compliance solutions that maximize fleet performance, ensure regulatory compliance, and create long-term success for our clients.
               </p>
@@ -177,6 +164,16 @@ export default function AboutPage() {
       </main>
 
       <Footer />
+    </div>
+  );
+}
+
+function StatCard({ value, label, sub }: { value: string, label: string, sub: string }) {
+  return (
+    <div className="border rounded-xl p-6 bg-white text-center">
+      <div className="text-3xl font-bold text-primary mb-2">{value}</div>
+      <div className="font-bold mb-1">{label}</div>
+      <div className="text-sm text-muted-foreground">{sub}</div>
     </div>
   );
 }
