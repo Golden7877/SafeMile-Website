@@ -11,18 +11,18 @@ export default function DispatchPage() {
   return (
     <div className="min-h-screen flex flex-col font-sans">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative bg-slate-950 text-white py-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src={dispatcherImg} 
-            alt="Dispatch Services" 
+          <img
+            src={dispatcherImg}
+            alt="Dispatch Services"
             className="w-full h-full object-cover opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-transparent"></div>
         </div>
-        
+
         <div className="container mx-auto px-4 md:px-8 relative z-10">
           <div className="max-w-3xl animate-in slide-in-from-left duration-700">
             <h1 className="text-4xl md:text-6xl font-black uppercase italic leading-tight mb-6">
@@ -44,34 +44,34 @@ export default function DispatchPage() {
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-4xl font-bold mb-4">Why Choose Our Dispatch Service?</h2>
             <p className="text-muted-foreground mb-12 max-w-2xl">Our professional dispatchers ensure maximum profitability and efficiency for your fleet.</p>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <FeatureCard 
+              <FeatureCard
                 icon={<Zap className="h-8 w-8 text-primary" />}
                 title="Fast Load Assignment"
                 description="Real-time load matching to minimize downtime between loads"
               />
-              <FeatureCard 
+              <FeatureCard
                 icon={<TrendingUp className="h-8 w-8 text-primary" />}
                 title="Rate Optimization"
                 description="Negotiate best rates with brokers and shippers to maximize earnings"
               />
-              <FeatureCard 
+              <FeatureCard
                 icon={<Users className="h-8 w-8 text-primary" />}
                 title="Expert Team"
                 description="Experienced dispatchers with deep industry knowledge"
               />
-              <FeatureCard 
+              <FeatureCard
                 icon={<Clock className="h-8 w-8 text-primary" />}
                 title="24/7 Support"
                 description="Round-the-clock availability for your dispatch needs"
               />
-              <FeatureCard 
+              <FeatureCard
                 icon={<CheckCircle2 className="h-8 w-8 text-primary" />}
                 title="Track & Trace"
                 description="Real-time tracking and detailed reporting on every load"
               />
-              <FeatureCard 
+              <FeatureCard
                 icon={<ArrowRight className="h-8 w-8 text-primary" />}
                 title="Regulatory Compliance"
                 description="Ensure all loads meet DOT and FMCSA requirements"
@@ -113,7 +113,7 @@ export default function DispatchPage() {
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4 md:px-8">
             <h2 className="text-4xl font-bold mb-12">Our Results</h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
               <StatCard value="$2.04" label="Average CPM" sub="Cost per mile achieved" />
               <StatCard value="$2.68" label="Top CPM" sub="Best client performance" />
@@ -128,13 +128,24 @@ export default function DispatchPage() {
           <div className="bg-slate-950 rounded-3xl p-12 text-white text-center">
             <h2 className="text-4xl font-bold mb-6">Ready to Maximize Your Revenue?</h2>
             <p className="text-slate-400 mb-8 text-lg max-w-2xl mx-auto">Join hundreds of trucking companies that trust SafeMile Compliance for professional dispatch services.</p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8">
+            <Button
+              variant="default"
+              className="bg-primary hover:bg-primary/90"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  const yOffset = -80; // adjust if navbar height different
+                  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
+            >
               Start Today
             </Button>
           </div>
         </section>
       </main>
-      
+
       <Footer />
     </div>
   );

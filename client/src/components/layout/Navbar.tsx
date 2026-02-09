@@ -43,7 +43,7 @@ export function Navbar() {
           </div>
           <div className="text-right py-1">
             <div className="text-sm font-bold text-slate-900">
-              <a href="tel:9099016499">909-901-6499</a>
+              <a href="tel:9099016499">+1 (909) 901-6499</a>
             </div>
             <div className="text-[10px] text-slate-400 -mt-1">Feel free to call us anytime</div>
           </div>

@@ -21,7 +21,7 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex flex-col">
                 <span className="text-sm text-muted-foreground">Call Us</span>
-                <span className="text-lg font-semibold">+1 (555) 123-4567</span>
+                <span className="text-lg font-semibold">+1 (909) 901-6499</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-sm text-muted-foreground">Email Us</span>
@@ -81,15 +81,24 @@ export function Footer() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <a
-              href="/contact"
+            <Button
+              variant="default"
               className="px-6 py-3 rounded-lg bg-primary text-white text-sm font-semibold hover:opacity-90 transition"
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) {
+                  const yOffset = -80; // adjust if navbar height different
+                  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                  window.scrollTo({ top: y, behavior: "smooth" });
+                }
+              }}
             >
+
               Get Free Consultation
-            </a>
+            </Button>
 
             <a
-              href="tel:+1234567890"
+              href="tel:9099016499"
               className="px-6 py-3 rounded-lg border text-sm font-semibold hover:bg-muted transition"
             >
               Call Now
