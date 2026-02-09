@@ -96,19 +96,19 @@ export default function Home() {
               href="/compliance-management"
             />
             <ServiceCard 
-              title="Hiring Drivers" 
+              title="Driver Hiring" 
               description="Recruiting services to find qualified drivers."
               price="Custom Pricing"
               href="/hiring-drivers"
             />
-             <ServiceCard 
+             {/* <ServiceCard 
               title="MC Setup" 
               description="We help you get your MC authority active."
               price="Custom Pricing"
               href="/mc-services"
-            />
+            /> */}
             
-            <div className="col-span-1 md:col-span-2 relative group overflow-hidden rounded-xl h-64">
+            {/* <div className="col-span-1 md:col-span-2 relative group overflow-hidden rounded-xl h-64">
               <img src={partnerImg} alt="partnerimg" className="absolute inset-0 w-full h-full object-cover transition-transform group-hover:scale-105" />
               <div className="absolute inset-0 bg-slate-900/70 p-8 flex flex-col justify-end">
                 <h3 className="text-white text-2xl font-bold mb-2">Become our partner</h3>
@@ -120,61 +120,87 @@ export default function Home() {
               <h3 className="text-xl font-bold mb-2">Choose any service and receive a <span className="text-primary">$100</span> for each truck</h3>
               <p className="text-muted-foreground text-sm mb-6">Limited time offer for new partners.</p>
               <Button className="w-fit bg-primary">Order Now</Button>
-            </div>
+            </div> */}
           </div>
         </section>
 
-        {/* Software Services */}
-        <section id="software" className="py-20 bg-slate-50">
-          <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-3xl font-bold mb-2">SafeMile Compliance Software Services</h2>
-            <p className="text-muted-foreground mb-12">Streamline your operations with our proprietary software.</p>
-            
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <SoftwareCard 
-                title="Compliance Management" 
-                badge="Popular"
-                description="Compliance Management System"
-                image={tmsImg}
-              />
-              <SoftwareCard 
-                title="Dispatch" 
-                description="Efficient load planning"
-                image={tmsImg} // Reusing for consistency style
-              />
-              <SoftwareCard 
-                title="Drivers" 
-                description="Driver mobile application"
-                image={tmsImg}
-              />
-              <SoftwareCard 
-                title="Reporting & Management" 
-                description="Reporting and management tools"
-                image={tmsImg}
-              />
-            </div>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-              <div className="bg-white p-8 rounded-xl border flex flex-col justify-between h-64">
-                <div>
-                   <h3 className="font-bold text-lg mb-2">ELD</h3>
-                   <p className="text-muted-foreground text-sm">Electronic Logging Device solutions compliant with FMCSA.</p>
-                </div>
-                 <img src={tmsImg} alt="tmsimg" className="h-24 object-cover object-top opacity-50 rounded-md border" />
-              </div>
-               <div className="bg-slate-900 text-white p-8 rounded-xl flex flex-col justify-center relative overflow-hidden">
-                 <div className="relative z-10">
-                   <h3 className="font-bold text-lg mb-2">Investments</h3>
-                   <p className="text-slate-300 text-sm mb-4">Invest in the future of logistics.</p>
-                   <Button variant="secondary" size="sm" className="bg-white/10 text-white hover:bg-white/20 border-0">Learn More</Button>
-                 </div>
-                 <div className="absolute right-0 bottom-0 opacity-20">
-                    <img src={alexImg} alt="aleximg" className="h-48 object-cover mix-blend-luminosity" />
-                 </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Article Section - Center + Full Page */}
+<section id="software-article" className="py-24 bg-slate-50 flex justify-center">
+  <div className="w-full max-w-[1400px] px-6 md:px-12 lg:px-20">
+
+    <article className="bg-white rounded-3xl shadow-sm p-10 md:p-16 text-center">
+
+      {/* Title */}
+      <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        SafeMile Compliance Software & Trucking Programs
+      </h1>
+
+      <p className="text-muted-foreground text-lg md:text-xl mb-12 max-w-4xl mx-auto">
+        SafeMile provides advanced compliance software, trucking tools, and professional training 
+        programs designed to streamline logistics operations, ensure FMCSA compliance, and support 
+        trucking business growth.
+      </p>
+
+      {/* Software */}
+      <div className="mb-14">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Compliance Software Services
+        </h2>
+
+        <p className="text-muted-foreground mb-6 max-w-3xl mx-auto">
+          Our proprietary software helps trucking companies automate operations, manage compliance, 
+          and increase efficiency through powerful digital tools.
+        </p>
+
+        <ul className="space-y-3 text-lg max-w-2xl mx-auto">
+          <li>✔ Compliance Management System</li>
+          <li>✔ Dispatch & Load Planning Tools</li>
+          <li>✔ Driver Mobile Application</li>
+          <li>✔ Reporting & Management Dashboard</li>
+          <li>✔ FMCSA Compliant ELD Solutions</li>
+        </ul>
+      </div>
+
+      {/* Investment */}
+      <div className="mb-14">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Invest in the Future of Logistics
+        </h2>
+
+        <p className="text-muted-foreground max-w-3xl mx-auto">
+          SafeMile continues to innovate in transportation technology and logistics services. 
+          Partner with us and invest in the future of smart, compliant, and efficient trucking operations.
+        </p>
+      </div>
+
+      {/* Training */}
+      <div className="mb-14">
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Professional Trucking Trainings
+        </h2>
+
+        <ul className="space-y-3 text-lg max-w-2xl mx-auto">
+          <li>✔ Truck Dispatcher Training</li>
+          <li>✔ Safety Manager Training</li>
+          <li>✔ Transportation Legal Training</li>
+        </ul>
+      </div>
+
+      {/* Programs */}
+      <div>
+        <h2 className="text-2xl md:text-3xl font-bold mb-4">
+          Trucking Business Programs
+        </h2>
+
+        <ul className="space-y-3 text-lg max-w-2xl mx-auto">
+          <li>✔ Trucking Boss – Complete business setup & mentorship</li>
+          <li>✔ Audit & Consulting for trucking companies</li>
+        </ul>
+      </div>
+
+    </article>
+  </div>
+</section>
 
         {/* Trainings & Programs */}
         {/* <section id="trainings" className="py-20 container mx-auto px-4 md:px-8">
@@ -210,7 +236,7 @@ export default function Home() {
               <Stat value="100M" label="Client Gross" sub="Total gross revenue generated for our clients" />
               <Stat value="350+" label="Active Trucks" sub="Trucks currently under our management" />
               <Stat value="100+" label="Employees" sub="Dedicated professionals working for you" />
-              <Stat value="200+" label="Happy Clients" sub="Satisfied trucking companies" />
+              {/* <Stat value="200+" label="Happy Clients" sub="Satisfied trucking companies" /> */}
             </div>
           </div>
         </section>
