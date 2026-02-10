@@ -30,11 +30,11 @@ function Router() {
       {/* <Route path="/safety" component={SafetyPage} /> */}
       {/* <Route path="/logbook" component={LogbookPage} /> */}
       {/* <Route path="/ifta" component={IFTAPage} /> */}
+      <Route path="/hiring-drivers" component={HiringDriversPage} />
       <Route path="/reporting-management" component={ReportingManagementPage} />
       <Route path="/compliance-management" component={ComplianceManagementPage} />
-      <Route path="/hiring-drivers" component={HiringDriversPage} />
-      <Route path="/tms" component={TMSPage} />
-      <Route path="/mc-services" component={MCServicesPage} />
+      {/* <Route path="/tms" component={TMSPage} /> */}
+      {/* <Route path="/mc-services" component={MCServicesPage} /> */}
       <Route path="/about_us" component={BlogPage} />
       <Route path="/faq" component={FAQPage} />
 

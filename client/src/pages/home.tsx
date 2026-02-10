@@ -296,49 +296,51 @@ function ServiceCard({
   href?: string
 }) {
   return (
+  <div
+    className={`
+      relative p-6 rounded-xl border h-40
+      flex flex-col justify-between overflow-hidden
+      transition-all duration-300 group cursor-pointer
+      hover:-translate-y-1 hover:shadow-xl
+      ${dark ? 'bg-slate-200 border-slate-800' : 'bg-white border-slate-200'}
+    `}
+  >
+
+    {/* IMAGE */}
+    {image && (
+      <img
+        src={image}
+        alt={title}
+        className="absolute inset-0 w-full h-full object-cover object-top
+                   transition-transform duration-700 group-hover:scale-105"
+      />
+    )}
+
+    {/* DARK OVERLAY */}
+    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition duration-300"></div>
+
+    {/* BRAND HOVER OVERLAY */}
     <div
       className={`
-        relative p-6 rounded-xl border h-40
-        flex flex-col justify-between overflow-hidden
-        transition-all duration-300 group cursor-pointer
-        hover:-translate-y-1 hover:shadow-xl
-        ${dark ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200'}
+        absolute inset-0 z-0 transition-colors duration-300
+        ${dark
+          ? 'bg-slate-900/0 group-hover:bg-slate-900/80'
+          : 'bg-primary/0 group-hover:bg-primary/80'}
       `}
-    >
-      {/* IMAGE BACKGROUND */}
-      {image && (
-        <img
-          src={image}
-          alt={title}
-          className="absolute inset-0 w-full h-full object-cover opacity-20
-                     transition-transform duration-700 group-hover:scale-105"
-        />
-      )}
+    />
 
-      {/* HOVER COLOR OVERLAY */}
-      <div
-        className={`
-          absolute inset-0 z-0 transition-colors duration-300
-          ${dark
-            ? 'bg-slate-900/0 group-hover:bg-slate-800/90'
-            : 'bg-white/0 group-hover:bg-primary/90'}
-        `}
-      />
-
-      {/* CONTENT */}
-      <div className="relative z-10">
-        <h3 className="text-xl font-bold mb-2 group-hover:text-white">
-          {title}
-        </h3>
-        <p className="text-sm opacity-80 group-hover:text-white/90">
-          {description}
-        </p>
-      </div>
-
-      <div className="relative z-10 flex justify-between items-end">
-      </div>
+    {/* CONTENT */}
+    <div className="relative z-10">
+      <h3 className="text-xl font-bold mb-2 text-white">
+        {title}
+      </h3>
+      <p className="text-sm text-white/90">
+        {description}
+      </p>
     </div>
-  )
+
+  </div>
+)
 }
 
 
