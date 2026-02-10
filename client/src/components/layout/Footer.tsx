@@ -73,48 +73,85 @@ export function Footer() {
             </form>
           </div>
         </div>
+      </div>
 
-        <div className="border-t pt-10">
-          <h4 className="font-bold mb-4">Ready to Get Started?</h4>
-          <p className="text-sm text-muted-foreground mb-6">
-            Talk to our logistics experts and get reliable, compliant, and efficient trucking solutions.
-          </p>
+      {/* FULL WIDTH MODERN FOOTER */}
+      <footer className="bg-gradient-to-r from-slate-900 to-black text-white py-2 w-full text-white">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-16">
+          {/* Grid layout */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+            {/* Logo + About */}
+            <div>
+              <div className="flex items-center gap-3 mb-5">
+                <img
+                  src="/Logo.png"
+                  alt="SafeMile Compliance"
+                  className="h-14 w-auto"
+                />
+                {/* <div>
+                  <h2 className="text-xl font-bold">SafeMile Compliance</h2>
+                  <p className="text-xs text-white/50">
+                    Where Reliability Meets Innovation
+                  </p>
+                </div> */}
+              </div>
 
-          <div className="flex flex-wrap gap-4">
-            <Button
-              variant="default"
-              className="px-6 py-3 rounded-lg bg-primary text-white text-sm font-semibold hover:opacity-90 transition"
-              onClick={() => {
-                const el = document.getElementById("contact");
-                if (el) {
-                  const yOffset = -80; // adjust if navbar height different
-                  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                  window.scrollTo({ top: y, behavior: "smooth" });
-                }
-              }}
-            >
+              <p className="text-sm text-white/60 max-w-sm">
+                We provide reliable dispatch, compliance, driver hiring, and fleet
+                management solutions to keep your trucking business safe, efficient,
+                and profitable.
+              </p>
+            </div>
 
-              Get Free Consultation
-            </Button>
+            {/* Services Links */}
+            <div>
+              <h3 className="font-semibold text-lg mb-5">Our Services</h3>
 
-            <a
-              href="tel:9099016499"
-              className="px-6 py-3 rounded-lg border text-sm font-semibold hover:bg-muted transition"
-            >
-              Call Now
-            </a>
+              <ul className="space-y-3 text-sm">
+                {[
+                  "Dispatch",
+                  "Driver Hiring",
+                  "Compliance Management",
+                  "Reporting & Management",
+                  "About Us",
+                  "FAQ",
+                ].map((item, i) => (
+                  <li key={i}>
+                    <a
+                      href="#"
+                      className="text-white/70 hover:text-primary transition duration-300"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Contact Quick */}
+            <div>
+              <h3 className="font-semibold text-lg mb-5">Contact</h3>
+
+              <ul className="space-y-3 text-sm text-white/70">
+                <li>📞 +1 (909) 901-6499</li>
+                <li>📧 support@safemile.com</li>
+                <li>📍 United States</li>
+              </ul>
+            </div>
           </div>
+        </div>
 
-          <div className="flex flex-col md:flex-row justify-between items-center mt-12 text-xs text-muted-foreground border-t pt-8">
-            <div className="flex gap-6 mb-4 md:mb-0">
-              <a href="#">Disclaimer</a>
-              <a href="#">Privacy Policy</a>
-              <a href="#">Terms of Use</a>
+        {/* Bottom Bar */}
+        <div className="w-full border-t border-white/10">
+          <div className="w-full px-6 md:px-16 lg:px-24 py-6 flex flex-col md:flex-row justify-between items-center text-xs text-white/50">
+            <div className="flex gap-6 mb-3 md:mb-0">
+              <a href="#" className="hover:text-white transition">Privacy Policy</a>
+              <a href="#" className="hover:text-white transition">Terms & Conditions</a>
             </div>
             <p>© 2026 SafeMile Compliance. All rights reserved.</p>
           </div>
         </div>
-      </div>
+      </footer>
     </footer>
   );
 }
