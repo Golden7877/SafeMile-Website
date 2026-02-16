@@ -53,62 +53,62 @@ export default function Home() {
 
         {/* Services Section */}
         <section id="services" className="py-20 container mx-auto px-4 md:px-8">
-  <h2 className="text-3xl font-bold mb-2 text-center">Trucking Services</h2>
-  <p className="text-muted-foreground mb-10 text-center">
-    Reliable and support Services with top-leading 3rd parties
-  </p>
+          <h2 className="text-3xl font-bold mb-2 text-center">Trucking Services</h2>
+          <p className="text-muted-foreground mb-10 text-center">
+            Reliable and support Services with top-leading 3rd parties
+          </p>
 
-  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 text-center">
-    <ServiceCard
-      title="Dispatch"
-      description="Efficient dispatch services to keep your trucks moving."
-      href="/dispatch"
-      image="/attached_assets/generated_images/dispatch.jpg"
-    />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 text-center">
+            <ServiceCard
+              title="Dispatch"
+              description="Efficient dispatch services to keep your trucks moving."
+              href="/dispatch"
+              image="/attached_assets/generated_images/dispatch.jpg"
+            />
 
-    <ServiceCard
-      title="Safety"
-      description="Safety first. We help you maintain safety compliance."
-      href="/safety"
-      image="/attached_assets/generated_images/Safety.jpg"
-    />
+            <ServiceCard
+              title="Safety"
+              description="Safety first. We help you maintain safety compliance."
+              href="/safety"
+              image="/attached_assets/generated_images/Safety.jpg"
+            />
 
-    <ServiceCard
-      title="Logbook"
-      description="Monitor logbooks accurately and easily."
-      href="/logbook"
-      image="/attached_assets/generated_images/Logbook.jpg"
-    />
+            <ServiceCard
+              title="Logbook"
+              description="Monitor logbooks accurately and easily."
+              href="/logbook"
+              image="/attached_assets/generated_images/Logbook.jpg"
+            />
 
-    <ServiceCard
-      title="IFTA"
-      description="Quarterly IFTA calculations & reports."
-      href="/ifta"
-      image="/attached_assets/generated_images/IFTA.jpg"
-    />
+            <ServiceCard
+              title="IFTA"
+              description="Quarterly IFTA calculations & reports."
+              href="/ifta"
+              image="/attached_assets/generated_images/IFTA.jpg"
+            />
 
-    <ServiceCard
-      title="Reporting & Management"
-      description="Actionable reporting and fleet management solutions."
-      href="/reporting-management"
-      image="/attached_assets/generated_images/Management.jpg"
-    />
+            <ServiceCard
+              title="Reporting & Management"
+              description="Actionable reporting and fleet management solutions."
+              href="/reporting-management"
+              image="/attached_assets/generated_images/Management.jpg"
+            />
 
-    <ServiceCard
-      title="Compliance Management"
-      description="Streamlined compliance support for your fleet."
-      href="/compliance-management"
-      image="/attached_assets/generated_images/Compliance-management.jpg"
-    />
+            <ServiceCard
+              title="Compliance Management"
+              description="Streamlined compliance support for your fleet."
+              href="/compliance-management"
+              image="/attached_assets/generated_images/Compliance-management.jpg"
+            />
 
-    <ServiceCard
-      title="Driver Hiring"
-      description="Recruiting services to find qualified drivers."
-      href="/hiring-drivers"
-      image="/attached_assets/generated_images/Driver-hiring.jpg"
-    />
-  </div>
-</section>
+            <ServiceCard
+              title="Driver Hiring"
+              description="Recruiting services to find qualified drivers."
+              href="/hiring-drivers"
+              image="/attached_assets/generated_images/Driver-hiring.jpg"
+            />
+          </div>
+        </section>
 
         {/* Article Section - Center + Full Page */}
         <section id="software-article" className="py-24 bg-slate-50 flex justify-center">
@@ -223,24 +223,24 @@ export default function Home() {
                 Explore our comprehensive suite of logistics solutions designed to propel your business forward. We combine technology with expertise.
               </p>
               <Button
-              variant="default"
-              className="bg-primary hover:bg-primary/90"
-              onClick={() => {
-                const el = document.getElementById("contact");
-                if (el) {
-                  const yOffset = -80; // adjust if navbar height different
-                  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-                  window.scrollTo({ top: y, behavior: "smooth" });
-                }
-              }}
-            >
-              Contact Us
-            </Button>
+                variant="default"
+                className="bg-primary hover:bg-primary/90"
+                onClick={() => {
+                  const el = document.getElementById("contact");
+                  if (el) {
+                    const yOffset = -80; // adjust if navbar height different
+                    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+                    window.scrollTo({ top: y, behavior: "smooth" });
+                  }
+                }}
+              >
+                Contact Us
+              </Button>
             </div>
             <div className="relative rounded-xl overflow-hidden shadow-2xl group cursor-pointer aspect-video">
               <img src="/attached_assets/generated_images/Trucking_Logistics.jpg" alt="Image Thumbnail" className="w-full h-full object-cover transition-transform duration-400 group-hover:scale-105" />
               <div className="absolute inset-0 bg-black/10 flex items-center justify-center group-hover:bg-black/410 transition-colors">
-                
+
               </div>
               <div className="absolute bottom-4 left-4 bg-black/60 text-white px-3 py-1 rounded text-sm font-medium">
                 SafeMile Compliance
@@ -296,51 +296,51 @@ function ServiceCard({
   href?: string
 }) {
   return (
-  <div
-    className={`
+    <div
+      className={`
       relative p-6 rounded-xl border h-40
       flex flex-col justify-between overflow-hidden
       transition-all duration-300 group cursor-pointer
       hover:-translate-y-1 hover:shadow-xl
       ${dark ? 'bg-slate-200 border-slate-800' : 'bg-white border-slate-200'}
     `}
-  >
+    >
 
-    {/* IMAGE */}
-    {image && (
-      <img
-        src={image}
-        alt={title}
-        className="absolute inset-0 w-full h-full object-cover object-top
+      {/* IMAGE */}
+      {image && (
+        <img
+          src={image}
+          alt={title}
+          className="absolute inset-0 w-full h-full object-cover object-top
                    transition-transform duration-700 group-hover:scale-105"
-      />
-    )}
+        />
+      )}
 
-    {/* DARK OVERLAY */}
-    <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition duration-300"></div>
+      {/* DARK OVERLAY */}
+      <div className="absolute inset-0 bg-black/50 group-hover:bg-black/60 transition duration-300"></div>
 
-    {/* BRAND HOVER OVERLAY */}
-    <div
-      className={`
+      {/* BRAND HOVER OVERLAY */}
+      <div
+        className={`
         absolute inset-0 z-0 transition-colors duration-300
         ${dark
-          ? 'bg-slate-900/0 group-hover:bg-slate-900/80'
-          : 'bg-primary/0 group-hover:bg-primary/80'}
+            ? 'bg-slate-900/0 group-hover:bg-slate-900/80'
+            : 'bg-primary/0 group-hover:bg-primary/80'}
       `}
-    />
+      />
 
-    {/* CONTENT */}
-    <div className="relative z-10">
-      <h3 className="text-xl font-bold mb-2 text-white">
-        {title}
-      </h3>
-      <p className="text-sm text-white/90">
-        {description}
-      </p>
+      {/* CONTENT */}
+      <div className="relative z-10">
+        <h3 className="text-xl font-bold mb-2 text-white">
+          {title}
+        </h3>
+        <p className="text-sm text-white/90">
+          {description}
+        </p>
+      </div>
+
     </div>
-
-  </div>
-)
+  )
 }
 
 

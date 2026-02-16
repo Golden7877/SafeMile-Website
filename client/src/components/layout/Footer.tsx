@@ -5,7 +5,36 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import { Facebook, Instagram, Linkedin, Twitter, Youtube, MessageCircle, Send } from "lucide-react";
 
+import { useRef } from "react";          // ✅ add this
+import emailjs from "@emailjs/browser";  // ✅ add this
+
+
 export function Footer() {
+
+  const formRef = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!formRef.current) return;
+
+    emailjs.sendForm(
+      "YOUR_SERVICE_ID",      // from emailjs
+      "YOUR_TEMPLATE_ID",     // from emailjs
+      formRef.current,
+      "YOUR_PUBLIC_KEY"       // from emailjs
+    ).then(
+      () => {
+        alert("Message sent successfully 🚀");
+        formRef.current?.reset();
+      },
+      (error) => {
+        alert("Failed to send ❌");
+        console.log(error);
+      }
+    );
+  };
+
   return (
     <footer id="contact" className="bg-white pt-20 pb-10 border-t">
       <div className="container mx-auto px-4 md:px-8">
@@ -21,11 +50,19 @@ export function Footer() {
             <div className="space-y-4">
               <div className="flex flex-col">
                 <span className="text-sm text-muted-foreground">Call Us</span>
-                <span className="text-lg font-semibold">+1 (909) 901-6499</span>
+                <span className="text-lg font-semibold">
+                  <a href="tel:+19099016499" className="hover:text-primary transition">
+                    +1 (909) 901-6499
+                  </a>
+                </span>
               </div>
               <div className="flex flex-col">
                 <span className="text-sm text-muted-foreground">Email Us</span>
-                <span className="text-lg font-semibold">info@safemilecompliance.com</span>
+                <span className="text-lg font-semibold">
+                  <a href="mailto:info@safemilecompliance.com" className="hover:text-primary transition">
+                    info@safemilecompliance.com
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -109,19 +146,19 @@ export function Footer() {
 
               <ul className="space-y-3 text-sm">
                 {[
-                  "Dispatch",
-                  "Driver Hiring",
-                  "Compliance Management",
-                  "Reporting & Management",
-                  "About Us",
-                  "FAQ",
+                  { name: "Dispatch", url: "/dispatch" },
+                  { name: "Driver Hiring", url: "/hiring-drivers" },
+                  { name: "Compliance Management", url: "/compliance-management" },
+                  { name: "Reporting & Management", url: "/reporting-management" },
+                  { name: "About Us", url: "/about_us" },
+                  { name: "FAQ", url: "/faq" },
                 ].map((item, i) => (
                   <li key={i}>
                     <a
-                      href="#"
+                      href={item.url}
                       className="text-white/70 hover:text-primary transition duration-300"
                     >
-                      {item}
+                      {item.name}
                     </a>
                   </li>
                 ))}
@@ -133,8 +170,18 @@ export function Footer() {
               <h3 className="font-semibold text-lg mb-5">Contact</h3>
 
               <ul className="space-y-3 text-sm text-white/70">
-                <li>📞 +1 (909) 901-6499</li>
-                <li>📧 support@safemile.com</li>
+                <li>
+                  📞
+                  <a href="tel:+19099016499" className="hover:text-white transition">
+                    +1 (909) 901-6499
+                  </a>
+                </li>
+
+                <li>📧
+                  <a href="mailto:support@safemile.com" className="hover:text-white transition">
+                    info@safemilecompliance.com
+                  </a>
+                </li>
                 <li>📍 United States</li>
               </ul>
             </div>
