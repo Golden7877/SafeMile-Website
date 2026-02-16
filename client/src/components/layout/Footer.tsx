@@ -19,10 +19,10 @@ export function Footer() {
     if (!formRef.current) return;
 
     emailjs.sendForm(
-      "YOUR_SERVICE_ID",      // from emailjs
-      "YOUR_TEMPLATE_ID",     // from emailjs
+      "service_cg02mo4",      // from emailjs
+      "template_lntl9sd",     // from emailjs
       formRef.current,
-      "YOUR_PUBLIC_KEY"       // from emailjs
+      "5aMINQo4e9QTNYfLc"       // from emailjs
     ).then(
       () => {
         alert("Message sent successfully 🚀");
