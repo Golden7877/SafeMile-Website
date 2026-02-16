@@ -19,10 +19,10 @@ export function Footer() {
     if (!formRef.current) return;
 
     emailjs.sendForm(
-      "service_cg02mo4",      // from emailjs
-      "template_lntl9sd",     // from emailjs
+      "service_hkd0eoq",      // from emailjs
+      "template_bpp6m6k",     // from emailjs
       formRef.current,
-      "5aMINQo4e9QTNYfLc"       // from emailjs
+      "qQqsbnMeT3jXFMUr6"       // from emailjs
     ).then(
       () => {
         alert("Message sent successfully 🚀");
@@ -75,39 +75,83 @@ export function Footer() {
             </div>
 
             <form className="space-y-4">
-              <div className="grid grid-cols-2 gap-4">
+
+              <h2 className="text-2xl font-bold text-center mb-4">Contact Us</h2>
+              <p className="text-center text-sm text-muted-foreground mb-6">
+                We’ll get back to you within 24 hours
+              </p>
+
+              {/* Name + Surname */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
-                  <Input id="name" placeholder="Name" />
+                  <Label htmlFor="name">First Name</Label>
+                  <Input
+                    id="name"
+                    placeholder="John"
+                    className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
+                  />
                 </div>
+
                 <div className="space-y-2">
-                  <Label htmlFor="surname">Surname</Label>
-                  <Input id="surname" placeholder="Surname" />
+                  <Label htmlFor="surname">Last Name</Label>
+                  <Input
+                    id="surname"
+                    placeholder="Smith"
+                    className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
+                  />
                 </div>
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="phone">Phone</Label>
-                <Input id="phone" placeholder="Phone" />
-              </div>
-              <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="Email" />
               </div>
 
+              {/* Phone */}
+              <div className="space-y-2">
+                <Label htmlFor="phone">Phone Number</Label>
+                <Input
+                  id="phone"
+                  placeholder="+1 234 567 8900"
+                  className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
+                />
+              </div>
+
+              {/* Email */}
+              <div className="space-y-2">
+                <Label htmlFor="email">Email Address</Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="you@email.com"
+                  className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
+                />
+              </div>
+
+              {/* Message */}
+              <div className="space-y-2">
+                <Label htmlFor="message">Message</Label>
+                <textarea
+                  id="message"
+                  rows={4}
+                  placeholder="Type your message here..."
+                  className="w-full px-3 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary resize-none"
+                  required
+                />
+              </div>
+
+              {/* Checkbox */}
               <div className="flex items-center space-x-2 pt-2">
                 <Checkbox id="terms" />
-                <label
-                  htmlFor="terms"
-                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 text-muted-foreground"
-                >
+                <label htmlFor="terms" className="text-sm text-muted-foreground">
                   I'm not a robot
                 </label>
               </div>
 
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-white mt-2">
-                Send
+              {/* Button */}
+              <Button
+                type="submit"
+                className="w-full h-12 text-base font-semibold bg-primary hover:bg-primary/90 text-white rounded-xl shadow-md transition-all duration-300"
+              >
+                Send Message
               </Button>
             </form>
+
           </div>
         </div>
       </div>
