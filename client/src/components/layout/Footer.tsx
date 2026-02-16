@@ -74,7 +74,7 @@ export function Footer() {
               <h3 className="text-xl font-bold">Want to talk with us?</h3>
             </div>
 
-            <form className="space-y-4">
+            <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
 
               <h2 className="text-2xl font-bold text-center mb-4">Contact Us</h2>
               <p className="text-center text-sm text-muted-foreground mb-6">
@@ -87,7 +87,9 @@ export function Footer() {
                   <Label htmlFor="name">First Name</Label>
                   <Input
                     id="name"
+                    name="from_name"
                     placeholder="John"
+                    required
                     className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
                   />
                 </div>
@@ -96,7 +98,9 @@ export function Footer() {
                   <Label htmlFor="surname">Last Name</Label>
                   <Input
                     id="surname"
+                    name="last_name"
                     placeholder="Smith"
+                    required
                     className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
                   />
                 </div>
@@ -107,7 +111,9 @@ export function Footer() {
                 <Label htmlFor="phone">Phone Number</Label>
                 <Input
                   id="phone"
+                  name="phone"
                   placeholder="+1 234 567 8900"
+                  required
                   className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
                 />
               </div>
@@ -117,8 +123,10 @@ export function Footer() {
                 <Label htmlFor="email">Email Address</Label>
                 <Input
                   id="email"
+                  name="from_email"
                   type="email"
                   placeholder="you@email.com"
+                  required
                   className="h-11 rounded-lg border-slate-300 focus:border-primary focus:ring-primary"
                 />
               </div>
@@ -128,6 +136,7 @@ export function Footer() {
                 <Label htmlFor="message">Message</Label>
                 <textarea
                   id="message"
+                  name="message"
                   rows={4}
                   placeholder="Type your message here..."
                   className="w-full px-3 py-3 border border-slate-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary focus:border-primary resize-none"
