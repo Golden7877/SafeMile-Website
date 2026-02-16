@@ -194,9 +194,11 @@ export default function FAQPage() {
                     <p className="text-slate-600">
                       Speak directly with our team
                     </p>
+                    <a href="tel:+19099016499">
                     <Button variant="link" className="p-0 text-primary h-auto">
                       Contact Our Team →
                     </Button>
+                    </a>
                   </CardContent>
                 </Card>
 
@@ -211,9 +213,11 @@ export default function FAQPage() {
                     <p className="text-slate-600">
                       Send us your questions anytime
                     </p>
+                    <a href="mailto:info@safemilecompliance.com">
                     <Button variant="link" className="p-0 text-primary h-auto">
                       Send Email →
                     </Button>
+                    </a>
                   </CardContent>
                 </Card>
 
@@ -228,7 +232,7 @@ export default function FAQPage() {
                     <p className="text-slate-600">
                       Get instant support from our team
                     </p>
-                    <Button variant="link" className="p-0 text-primary h-auto">
+                    <Button variant="link" className="p-0 text-primary h-auto" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                       Start Chat →
                     </Button>
                   </CardContent>

@@ -38,9 +38,9 @@ export default function Home() {
               As one of the leading trucking companies, SafeMile Compliance provides premium trucking services to enhance your business.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 h-12 text-lg">
-                Get Started
-              </Button>
+              <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
+              Get Started
+            </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-slate-600 text-white hover:bg-white/10 h-12 text-lg">
                 Learn More
               </Button>

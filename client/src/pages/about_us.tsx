@@ -117,18 +117,18 @@ export default function AboutPage() {
 
 
           {/* Results Section */}
-        <section className="py-20 bg-white">
-          <div className="container mx-auto px-4 md:px-8">
-            <h2 className="text-4xl font-bold mb-12">Our Results</h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-              <StatCard value="$2.04" label="Average CPM" sub="Cost per mile achieved" />
-              <StatCard value="$2.68" label="Top CPM" sub="Best client performance" />
-              <StatCard value="100M" label="Total Gross" sub="Revenue generated for clients" />
-              <StatCard value="350+" label="Active Trucks" sub="Currently under dispatch" />
+          <section className="py-20 bg-white">
+            <div className="container mx-auto px-4 md:px-8">
+              <h2 className="text-4xl font-bold mb-12">Our Results</h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <StatCard value="$2.04" label="Average CPM" sub="Cost per mile achieved" />
+                <StatCard value="$2.68" label="Top CPM" sub="Best client performance" />
+                <StatCard value="100M" label="Total Gross" sub="Revenue generated for clients" />
+                <StatCard value="350+" label="Active Trucks" sub="Currently under dispatch" />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
           {/* Mission & Vision */}
           <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -155,7 +155,7 @@ export default function AboutPage() {
               Let SafeMile Compliance handle the paperwork, audits, and safety
               programs—so you can focus on the road ahead.
             </p>
-            <Button className="bg-primary hover:bg-primary/90">
+            <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior:'smooth' })}>
               Contact Us <ArrowRight className="ml-2 h-4 w-4" />
             </Button>
           </section>

@@ -86,7 +86,7 @@ export default function IFTAPage() {
           <div className="bg-slate-950 rounded-3xl p-12 text-white text-center">
             <h2 className="text-4xl font-bold mb-6">Never Miss a Filing Deadline</h2>
             <p className="text-slate-400 mb-8 text-lg">We handle all your quarterly IFTA obligations.</p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90">
+            <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started
             </Button>
           </div>

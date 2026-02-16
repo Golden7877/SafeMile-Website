@@ -30,7 +30,7 @@ export default function ProgramsPage() {
             <p className="text-lg text-slate-300 mb-8 leading-relaxed max-w-2xl">
               Transform your trucking business with our comprehensive programs. From startup to scale-up, we have solutions for every stage of growth.
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white font-semibold px-8 h-12">
+            <Button size="lg" className="bg-primary hover:bg-primary/90" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
               Get Started
             </Button>
           </div>

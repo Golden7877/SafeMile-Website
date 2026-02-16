@@ -225,7 +225,7 @@ export function Footer() {
               <ul className="space-y-3 text-sm text-white/70">
                 <li>
                   📞
-                  <a href="tel:+19099016499" className="hover:text-white transition">
+                  <a href="c" className="hover:text-white transition">
                     +1 (909) 901-6499
                   </a>
                 </li>
